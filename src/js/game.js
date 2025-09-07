@@ -98,14 +98,14 @@ function updateUI() {
     
     if (gameState.currentState) {
         currentStateElement.textContent = statesData[gameState.currentState];
-        // Update floating state display only during gameplay
+        // Update floating state text if it's visible
         const floatingState = document.getElementById('floating-state');
-        if (floatingState && gameState.isGameActive) {
+        if (floatingState && floatingState.classList.contains('enabled')) {
             floatingState.textContent = statesData[gameState.currentState];
         }
     } else {
         currentStateElement.textContent = 'Click Start to Begin';
-        // Clear floating state display
+        // Clear floating state text
         const floatingState = document.getElementById('floating-state');
         if (floatingState) {
             floatingState.textContent = '';
@@ -135,6 +135,9 @@ function startGame() {
     gameState.timerEnabled = timerToggle.checked;
     gameState.keepHighlighted = highlightToggle.checked;
     gameState.pointsPerState = gameState.keepHighlighted ? 1 : 2;
+    
+    // Update floating state visibility when game starts
+    updateFloatingStateVisibility();
     
     startBtn.style.display = 'none';
     resetBtn.style.display = 'inline-block';
@@ -267,11 +270,8 @@ function handleStateClick(stateCode) {
 function endGame() {
     gameState.isGameActive = false;
     
-    // Hide floating state when game ends
-    const floatingState = document.getElementById('floating-state');
-    if (floatingState) {
-        floatingState.textContent = '';
-    }
+    // Update floating state visibility when game ends
+    updateFloatingStateVisibility();
     
     // Stop timer if enabled
     if (gameState.timerEnabled) {
@@ -301,14 +301,11 @@ function goHome() {
         clearInterval(gameState.timerInterval);
     }
     
-    // Hide floating state when going home
-    const floatingState = document.getElementById('floating-state');
-    if (floatingState) {
-        floatingState.textContent = '';
-    }
-    
     // Reset to initial state
     initGame();
+    
+    // Update floating state visibility when going home
+    updateFloatingStateVisibility();
     
     // Show start button, hide others
     startBtn.style.display = 'inline-block';
@@ -335,8 +332,8 @@ playAgainBtn.addEventListener('click', () => {
     resetGame();
 });
 
-// Floating state with zoom compensation
-let floatingStateEnabled = false;
+// Floating state with zoom compensation  
+let floatingStateToggleEnabled = false; // User's toggle preference
 let zoomCompensationInterval = null;
 
 function getZoomLevel() {
@@ -350,15 +347,42 @@ function getZoomLevel() {
     return devicePixelRatio;
 }
 
+// Check if floating state should be visible (both toggle AND game active)
+function updateFloatingStateVisibility() {
+    const floatingState = document.getElementById('floating-state');
+    if (!floatingState) return;
+    
+    const shouldBeVisible = floatingStateToggleEnabled && gameState.isGameActive;
+    
+    if (shouldBeVisible) {
+        floatingState.classList.add('enabled');
+        // Start zoom compensation if not already running
+        if (!zoomCompensationInterval) {
+            updateZoomCompensation();
+            zoomCompensationInterval = setInterval(updateZoomCompensation, 200);
+            window.addEventListener('resize', updateZoomCompensation);
+        }
+    } else {
+        floatingState.classList.remove('enabled');
+        floatingState.textContent = '';
+        // Stop zoom compensation
+        if (zoomCompensationInterval) {
+            clearInterval(zoomCompensationInterval);
+            zoomCompensationInterval = null;
+            window.removeEventListener('resize', updateZoomCompensation);
+            floatingState.style.transform = '';
+        }
+    }
+}
+
 function updateZoomCompensation() {
     const floatingState = document.getElementById('floating-state');
-    if (!floatingState || !floatingStateEnabled) return;
+    if (!floatingState || !floatingState.classList.contains('enabled')) return;
     
     const zoomLevel = getZoomLevel();
     const inverseScale = 1 / Math.max(zoomLevel, 0.25); // Prevent division by very small numbers
     
     // Combine centering transform with zoom compensation
-    // Keep CSS centering, add scaling
     floatingState.style.transform = `translateX(-50%) scale(${inverseScale})`;
     
     // Debug: log the values (remove later)
@@ -366,31 +390,8 @@ function updateZoomCompensation() {
 }
 
 function toggleFloatingState(enabled) {
-    floatingStateEnabled = enabled;
-    const floatingState = document.getElementById('floating-state');
-    
-    if (enabled) {
-        floatingState.classList.add('enabled');
-        // Start zoom compensation
-        updateZoomCompensation();
-        zoomCompensationInterval = setInterval(updateZoomCompensation, 200);
-        
-        // Listen to resize events for zoom changes
-        window.addEventListener('resize', updateZoomCompensation);
-    } else {
-        floatingState.classList.remove('enabled');
-        // Stop zoom compensation
-        if (zoomCompensationInterval) {
-            clearInterval(zoomCompensationInterval);
-            zoomCompensationInterval = null;
-        }
-        
-        // Remove event listener
-        window.removeEventListener('resize', updateZoomCompensation);
-        
-        // Reset to CSS default transform
-        floatingState.style.transform = '';
-    }
+    floatingStateToggleEnabled = enabled;
+    updateFloatingStateVisibility();
 }
 
 // Initialize on load
