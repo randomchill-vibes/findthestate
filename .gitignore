@@ -1,0 +1,11 @@
+# Vim swap files
+*.swp
+*.swo
+
+# Editor files
+.vscode/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
