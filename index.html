@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find the State - USA Map Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <header>
+            <h1>Find the State</h1>
+            <div class="game-options" id="game-options-container">
+                <div class="option-row">
+                    <span class="option-label">Timer:</span>
+                    <label class="switch">
+                        <input type="checkbox" id="timer-toggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <span></span>
+                </div>
+                <div class="option-row">
+                    <span class="option-label">Highlight Found:</span>
+                    <label class="switch">
+                        <input type="checkbox" id="highlight-toggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <span></span>
+                </div>
+                <div class="difficulty-note" id="difficulty-note">
+                    <small>💡 Disable highlighting for 2x points per state!</small>
+                </div>
+            </div>
+            <div class="game-header" id="game-header" style="display: none;">
+                <div class="current-state-container">
+                    <div class="current-state" id="current-state">Click Start to Begin</div>
+                </div>
+                <div class="game-stats">
+                    <div class="score">
+                        <span class="stat-label">Score:</span>
+                        <span class="stat-value"><span id="score">0</span> / <span id="total">50</span></span>
+                    </div>
+                    <div class="attempts">
+                        <span class="stat-label">Attempts:</span>
+                        <span class="stat-value"><span id="attempts">0</span></span>
+                    </div>
+                    <div class="timer timer-hidden" id="timer-display">
+                        <span class="stat-label">Time:</span>
+                        <span class="stat-value"><span id="timer">00:00</span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        
+        <main>
+            <div id="map-container" class="map-container">
+                <!-- SVG map will be inserted here -->
+            </div>
+            
+            <div class="controls">
+                <button id="start-btn" class="btn btn-primary">Start Game</button>
+                <button id="reset-btn" class="btn btn-secondary" style="display: none;">Reset</button>
+                <button id="home-btn" class="btn btn-secondary" style="display: none;">Home</button>
+            </div>
+            
+            <div id="feedback" class="feedback"></div>
+        </main>
+        
+        <div id="game-over" class="game-over-modal" style="display: none;">
+            <div class="modal-content">
+                <h2>Game Complete!</h2>
+                <p>Your final score: <span id="final-score"></span></p>
+                <p>Total attempts: <span id="total-attempts"></span></p>
+                <p id="final-time-display" style="display: none;">Time: <span id="final-time"></span></p>
+                <button id="play-again-btn" class="btn btn-primary">Play Again</button>
+                <button id="modal-home-btn" class="btn btn-secondary">Home</button>
+            </div>
+        </div>
+    </div>
+    
+    <script src="states-data.js"></script>
+    <script src="usa-map.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
