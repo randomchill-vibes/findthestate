@@ -29,17 +29,16 @@ An interactive geography game where players identify all 50 US states on an accu
    npm run serve
    
    # Using VS Code Live Server extension
-   # Right-click on public/index.html > "Open with Live Server"
+   # Right-click on index.html > "Open with Live Server"
    ```
 
-3. **Open your browser** to `http://localhost:8000/public/`
+3. **Open your browser** to `http://localhost:8000/`
 
 ## File Structure
 
 ```
 find-the-state/
-├── public/
-│   └── index.html          # Main game page
+├── index.html              # Main game page (GitHub Pages compatible)
 ├── src/
 │   ├── css/
 │   │   └── styles.css      # Game styling

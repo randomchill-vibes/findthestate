@@ -5,7 +5,7 @@ async function loadUSAMap() {
     try {
         // For local file access, we'll need to embed the SVG directly or use a local server
         // Try to load the SVG file
-        const response = await fetch('../src/assets/us.svg');
+        const response = await fetch('src/assets/us.svg');
         
         if (!response.ok) {
             throw new Error('Failed to load SVG file');
