@@ -337,7 +337,6 @@ let floatingStateToggleEnabled = false; // User's toggle preference
 let zoomCompensationInterval = null;
 let pendingUpdate = false; // Prevent multiple RAF calls
 let cachedFloatingStateWidth = 0; // Cache width to avoid layout thrashing
-let touchDebounceTimer = null; // Debounce timer for touch events
 
 function getZoomLevel() {
     // Multiple methods to detect zoom level, with fallbacks
@@ -402,8 +401,8 @@ function updateFloatingStateVisibility() {
             window.addEventListener('wheel', handleWheelZoom);
             
             // Scroll tracking
-            window.addEventListener('scroll', requestZoomUpdate, { passive: true });
-            document.addEventListener('scroll', requestZoomUpdate, { passive: true });
+            window.addEventListener('scroll', requestZoomUpdate, { passive: false });
+            document.addEventListener('scroll', requestZoomUpdate, { passive: false });
             
             // Visual Viewport API events (most reliable for zoom/scroll detection)
             if (window.visualViewport) {
@@ -411,10 +410,10 @@ function updateFloatingStateVisibility() {
                 window.visualViewport.addEventListener('scroll', requestZoomUpdate);
             }
             
-            // Touch events for mobile - use debounced version to reduce judder
-            window.addEventListener('touchstart', requestZoomUpdateDebounced, { passive: true });
-            window.addEventListener('touchmove', requestZoomUpdateDebounced, { passive: true });
-            window.addEventListener('touchend', requestZoomUpdateDebounced, { passive: true });
+            // Touch events for mobile - update immediately for smooth tracking
+            window.addEventListener('touchstart', requestZoomUpdate, { passive: false });
+            window.addEventListener('touchmove', requestZoomUpdate, { passive: false });
+            window.addEventListener('touchend', requestZoomUpdate, { passive: false });
         }
     } else {
         floatingState.classList.remove('enabled');
@@ -434,16 +433,10 @@ function updateFloatingStateVisibility() {
                 window.visualViewport.removeEventListener('scroll', requestZoomUpdate);
             }
             
-            // Remove touch events - use debounced version
-            window.removeEventListener('touchstart', requestZoomUpdateDebounced);
-            window.removeEventListener('touchmove', requestZoomUpdateDebounced);
-            window.removeEventListener('touchend', requestZoomUpdateDebounced);
-            
-            // Clear any pending debounce timer
-            if (touchDebounceTimer) {
-                clearTimeout(touchDebounceTimer);
-                touchDebounceTimer = null;
-            }
+            // Remove touch events
+            window.removeEventListener('touchstart', requestZoomUpdate);
+            window.removeEventListener('touchmove', requestZoomUpdate);
+            window.removeEventListener('touchend', requestZoomUpdate);
             
             floatingState.style.transform = 'translate(0, 0)';
         }
@@ -460,20 +453,6 @@ function requestZoomUpdate() {
             pendingUpdate = false;
         });
     }
-}
-
-// Debounced version for touch events to reduce update frequency
-function requestZoomUpdateDebounced() {
-    // Clear any existing timer
-    if (touchDebounceTimer) {
-        clearTimeout(touchDebounceTimer);
-    }
-    
-    // Set a new timer - only update after touch events stop for 50ms
-    touchDebounceTimer = setTimeout(() => {
-        requestZoomUpdate();
-        touchDebounceTimer = null;
-    }, 50);
 }
 
 // Handle resize events and recache width
