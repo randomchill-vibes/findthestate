@@ -390,14 +390,14 @@ function updateFloatingStateVisibility() {
         // Start zoom compensation if not already running
         if (!zoomCompensationInterval) {
             updateZoomCompensation();
-            // Much more frequent updates for smooth positioning (60fps-like)
-            zoomCompensationInterval = setInterval(updateZoomCompensation, 16);
+            // PURE EVENT-DRIVEN - no timer interval
+            zoomCompensationInterval = true; // Just track that we're active
             
-            // Listen for various events - use passive listeners for better performance
+            // Listen for all relevant events - use passive listeners for better performance
             window.addEventListener('resize', updateZoomCompensation);
             window.addEventListener('wheel', handleWheelZoom);
             
-            // Aggressive scroll tracking to ensure element stays at top
+            // Scroll tracking
             window.addEventListener('scroll', updateZoomCompensation, { passive: true });
             document.addEventListener('scroll', updateZoomCompensation, { passive: true });
             
@@ -406,13 +406,17 @@ function updateFloatingStateVisibility() {
                 window.visualViewport.addEventListener('resize', updateZoomCompensation);
                 window.visualViewport.addEventListener('scroll', updateZoomCompensation);
             }
+            
+            // Touch events for mobile
+            window.addEventListener('touchstart', updateZoomCompensation, { passive: true });
+            window.addEventListener('touchmove', updateZoomCompensation, { passive: true });
+            window.addEventListener('touchend', updateZoomCompensation, { passive: true });
         }
     } else {
         floatingState.classList.remove('enabled');
         floatingState.textContent = '';
         // Stop zoom compensation
         if (zoomCompensationInterval) {
-            clearInterval(zoomCompensationInterval);
             zoomCompensationInterval = null;
             
             // Remove all event listeners
@@ -425,6 +429,11 @@ function updateFloatingStateVisibility() {
                 window.visualViewport.removeEventListener('resize', updateZoomCompensation);
                 window.visualViewport.removeEventListener('scroll', updateZoomCompensation);
             }
+            
+            // Remove touch events
+            window.removeEventListener('touchstart', updateZoomCompensation);
+            window.removeEventListener('touchmove', updateZoomCompensation);
+            window.removeEventListener('touchend', updateZoomCompensation);
             
             floatingState.style.transform = '';
             floatingState.style.left = '';
