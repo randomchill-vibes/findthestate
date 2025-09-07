@@ -336,6 +336,8 @@ playAgainBtn.addEventListener('click', () => {
 let floatingStateToggleEnabled = false; // User's toggle preference
 let zoomCompensationInterval = null;
 let pendingUpdate = false; // Prevent multiple RAF calls
+let cachedFloatingStateWidth = 0; // Cache width to avoid layout thrashing
+let touchDebounceTimer = null; // Debounce timer for touch events
 
 function getZoomLevel() {
     // Multiple methods to detect zoom level, with fallbacks
@@ -388,13 +390,15 @@ function updateFloatingStateVisibility() {
     
     if (shouldBeVisible) {
         floatingState.classList.add('enabled');
+        // Cache the width when we enable the floating state
+        cachedFloatingStateWidth = floatingState.offsetWidth;
         // Start zoom compensation if not already running
         if (!zoomCompensationInterval) {
             requestZoomUpdate(); // Initial update
             zoomCompensationInterval = true; // Just track that we're active
             
             // Listen for all relevant events - use passive listeners for better performance
-            window.addEventListener('resize', requestZoomUpdate);
+            window.addEventListener('resize', handleResize);
             window.addEventListener('wheel', handleWheelZoom);
             
             // Scroll tracking
@@ -407,10 +411,10 @@ function updateFloatingStateVisibility() {
                 window.visualViewport.addEventListener('scroll', requestZoomUpdate);
             }
             
-            // Touch events for mobile
-            window.addEventListener('touchstart', requestZoomUpdate, { passive: true });
-            window.addEventListener('touchmove', requestZoomUpdate, { passive: true });
-            window.addEventListener('touchend', requestZoomUpdate, { passive: true });
+            // Touch events for mobile - use debounced version to reduce judder
+            window.addEventListener('touchstart', requestZoomUpdateDebounced, { passive: true });
+            window.addEventListener('touchmove', requestZoomUpdateDebounced, { passive: true });
+            window.addEventListener('touchend', requestZoomUpdateDebounced, { passive: true });
         }
     } else {
         floatingState.classList.remove('enabled');
@@ -420,7 +424,7 @@ function updateFloatingStateVisibility() {
             zoomCompensationInterval = null;
             
             // Remove all event listeners
-            window.removeEventListener('resize', requestZoomUpdate);
+            window.removeEventListener('resize', handleResize);
             window.removeEventListener('wheel', handleWheelZoom);
             window.removeEventListener('scroll', requestZoomUpdate);
             document.removeEventListener('scroll', requestZoomUpdate);
@@ -430,10 +434,16 @@ function updateFloatingStateVisibility() {
                 window.visualViewport.removeEventListener('scroll', requestZoomUpdate);
             }
             
-            // Remove touch events
-            window.removeEventListener('touchstart', requestZoomUpdate);
-            window.removeEventListener('touchmove', requestZoomUpdate);
-            window.removeEventListener('touchend', requestZoomUpdate);
+            // Remove touch events - use debounced version
+            window.removeEventListener('touchstart', requestZoomUpdateDebounced);
+            window.removeEventListener('touchmove', requestZoomUpdateDebounced);
+            window.removeEventListener('touchend', requestZoomUpdateDebounced);
+            
+            // Clear any pending debounce timer
+            if (touchDebounceTimer) {
+                clearTimeout(touchDebounceTimer);
+                touchDebounceTimer = null;
+            }
             
             floatingState.style.transform = 'translate(0, 0)';
         }
@@ -450,6 +460,29 @@ function requestZoomUpdate() {
             pendingUpdate = false;
         });
     }
+}
+
+// Debounced version for touch events to reduce update frequency
+function requestZoomUpdateDebounced() {
+    // Clear any existing timer
+    if (touchDebounceTimer) {
+        clearTimeout(touchDebounceTimer);
+    }
+    
+    // Set a new timer - only update after touch events stop for 50ms
+    touchDebounceTimer = setTimeout(() => {
+        requestZoomUpdate();
+        touchDebounceTimer = null;
+    }, 50);
+}
+
+// Handle resize events and recache width
+function handleResize() {
+    const floatingState = document.getElementById('floating-state');
+    if (floatingState) {
+        cachedFloatingStateWidth = floatingState.offsetWidth;
+    }
+    requestZoomUpdate();
 }
 
 function updateZoomCompensation() {
@@ -483,16 +516,16 @@ function updateZoomCompensation() {
         // Use single transform for better performance (no layout thrashing)
         // Convert leftPosition percentage to pixels for transform
         const leftPixels = (leftPosition * layoutViewportWidth) / 100;
-        // Account for scale when centering - the visual width will be offsetWidth * scale
-        const scaledWidthOffset = (floatingState.offsetWidth * scale) / 2;
+        // Account for scale when centering - use cached width to avoid layout recalc
+        const scaledWidthOffset = (cachedFloatingStateWidth * scale) / 2;
         floatingState.style.transform = `translate(${leftPixels - scaledWidthOffset}px, ${topPosition}px) scale(${scale})`;
         
     } else {
         // Fallback for browsers without Visual Viewport API  
         const layoutViewportWidth = document.documentElement.clientWidth;
         const leftPixels = (leftPosition * layoutViewportWidth) / 100;
-        // Account for scale when centering - the visual width will be offsetWidth * scale
-        const scaledWidthOffset = (floatingState.offsetWidth * scale) / 2;
+        // Account for scale when centering - use cached width to avoid layout recalc
+        const scaledWidthOffset = (cachedFloatingStateWidth * scale) / 2;
         floatingState.style.transform = `translate(${leftPixels - scaledWidthOffset}px, ${topPosition}px) scale(${scale})`;
     }
     
