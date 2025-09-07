@@ -227,11 +227,11 @@ input:checked + .slider:before {
 
 /* Floating viewport-aware state name */
 .floating-state {
-    position: fixed;
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%) translateZ(0);
-    z-index: 9999;
+    position: fixed !important;
+    top: 20px !important;
+    left: 50% !important;
+    margin-left: -100px; /* Approximate centering, will be adjusted by JS */
+    z-index: 9999 !important;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
     text-align: center;
@@ -244,7 +244,6 @@ input:checked + .slider:before {
     display: none;
     pointer-events: none;
     white-space: nowrap;
-    /* Compensate for zoom scaling */
     transform-origin: center top;
 }
 

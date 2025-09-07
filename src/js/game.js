@@ -349,8 +349,13 @@ function updateZoomCompensation() {
     const zoomLevel = getZoomLevel();
     const inverseScale = 1 / Math.max(zoomLevel, 0.5); // Prevent division by very small numbers
     
-    // Apply inverse scaling to maintain constant visual size
-    floatingState.style.transform = `translateX(-50%) translateZ(0) scale(${inverseScale})`;
+    // Apply only scaling, preserve fixed positioning
+    floatingState.style.transform = `scale(${inverseScale})`;
+    
+    // Adjust centering based on actual width after scaling
+    const rect = floatingState.getBoundingClientRect();
+    const actualWidth = rect.width;
+    floatingState.style.marginLeft = `${-actualWidth / 2}px`;
 }
 
 function toggleFloatingState(enabled) {
@@ -376,8 +381,9 @@ function toggleFloatingState(enabled) {
         // Remove event listener
         window.removeEventListener('resize', updateZoomCompensation);
         
-        // Reset transform
-        floatingState.style.transform = 'translateX(-50%) translateZ(0)';
+        // Reset transform and margin
+        floatingState.style.transform = '';
+        floatingState.style.marginLeft = '-100px';
     }
 }
 
