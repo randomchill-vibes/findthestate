@@ -1,0 +1,18 @@
+{
+  "name": "find-the-state",
+  "version": "1.0.0",
+  "description": "Interactive USA states geography game",
+  "main": "public/index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000",
+    "serve": "npx http-server -p 8000"
+  },
+  "keywords": ["geography", "game", "usa", "states", "education"],
+  "author": "Claude Code",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/username/find-the-state.git"
+  }
+}
