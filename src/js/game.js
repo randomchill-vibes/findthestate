@@ -98,17 +98,17 @@ function updateUI() {
     
     if (gameState.currentState) {
         currentStateElement.textContent = statesData[gameState.currentState];
-        // Update map container data attribute for mobile CSS
-        const mapContainer = document.getElementById('map-container');
-        if (mapContainer) {
-            mapContainer.setAttribute('data-current-state', statesData[gameState.currentState]);
+        // Update fixed mobile state display
+        const mobileFixedState = document.getElementById('mobile-fixed-state');
+        if (mobileFixedState) {
+            mobileFixedState.textContent = statesData[gameState.currentState];
         }
     } else {
         currentStateElement.textContent = 'Click Start to Begin';
-        // Clear map container data attribute
-        const mapContainer = document.getElementById('map-container');
-        if (mapContainer) {
-            mapContainer.removeAttribute('data-current-state');
+        // Clear fixed mobile state display
+        const mobileFixedState = document.getElementById('mobile-fixed-state');
+        if (mobileFixedState) {
+            mobileFixedState.textContent = '';
         }
     }
 }

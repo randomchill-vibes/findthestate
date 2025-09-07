@@ -225,12 +225,35 @@ input:checked + .slider:before {
     }
 }
 
+/* Fixed state name at top of screen for mobile */
+.mobile-fixed-state {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    z-index: 9999;
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    text-align: center;
+    font-size: 1.6em;
+    font-weight: bold;
+    color: #667eea;
+    padding: 15px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    display: none;
+    /* Ensure it stays fixed during zoom */
+    transform: translateZ(0);
+    will-change: transform;
+    pointer-events: none;
+}
+
 /* Mobile adjustments */
 @media (max-width: 768px) {
     .game-header {
         height: auto;
         padding-top: 0;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
     }
     
     .game-stats {
@@ -238,7 +261,7 @@ input:checked + .slider:before {
         min-width: auto;
         width: 100%;
         text-align: center;
-        margin-bottom: 20px;
+        margin-bottom: 5px;
     }
     
     /* Hide the original state container on mobile */
@@ -246,33 +269,29 @@ input:checked + .slider:before {
         display: none;
     }
     
+    /* Show fixed state name at top */
+    .mobile-fixed-state {
+        display: block;
+    }
+    
+    /* Add top padding to body to account for fixed header */
+    body {
+        padding-top: 80px;
+    }
+    
     .map-container {
         position: relative;
         margin-top: 0;
-        padding-top: 60px;
-    }
-    
-    /* Create mobile state overlay inside map container */
-    .map-container::before {
-        content: attr(data-current-state);
-        position: absolute;
-        top: 20px;
-        left: 50%;
-        transform: translateX(-50%);
-        z-index: 20;
-        font-size: 1.6em;
-        font-weight: bold;
-        color: #667eea;
-        background: rgba(255, 255, 255, 0.95);
-        padding: 8px 16px;
-        border-radius: 10px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
-        border: 1px solid #e0e7ff;
-        pointer-events: none;
+        padding: 10px;
+        margin-bottom: 10px;
+        /* Allow overflow for zooming */
+        overflow: auto;
     }
     
     #usa-map {
         transform: none;
+        /* Enable touch zoom on mobile */
+        touch-action: pinch-zoom;
     }
 }
 
@@ -287,6 +306,7 @@ input:checked + .slider:before {
     align-items: center;
     position: relative;
 }
+
 
 #usa-map {
     width: 100%;
