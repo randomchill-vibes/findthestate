@@ -246,8 +246,8 @@ input:checked + .slider:before {
     pointer-events: none;
     white-space: nowrap;
     transform-origin: top center;
-    /* Much smoother transitions for positioning changes */
-    transition: top 0.5s ease-out, left 0.5s ease-out, transform 0.5s ease-out;
+    /* Smooth transitions for positioning changes */
+    transition: top 0.3s ease-out, left 0.3s ease-out, transform 0.3s ease-out;
 }
 
 .floating-state.enabled {
