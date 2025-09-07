@@ -2,13 +2,13 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=3.0, user-scalable=yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Find the State - USA Map Game</title>
     <link rel="stylesheet" href="src/css/styles.css">
 </head>
 <body>
-    <!-- Fixed state name at top of screen for mobile -->
-    <div id="mobile-fixed-state" class="mobile-fixed-state"></div>
+    <!-- Floating viewport-aware state name -->
+    <div id="floating-state" class="floating-state"></div>
     
     <div class="game-container">
         <header>
@@ -26,6 +26,14 @@
                     <span class="option-label">Highlight Found:</span>
                     <label class="switch">
                         <input type="checkbox" id="highlight-toggle" checked>
+                        <span class="slider"></span>
+                    </label>
+                    <span></span>
+                </div>
+                <div class="option-row">
+                    <span class="option-label">Floating State:</span>
+                    <label class="switch">
+                        <input type="checkbox" id="floating-state-toggle">
                         <span class="slider"></span>
                     </label>
                     <span></span>

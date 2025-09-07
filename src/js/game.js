@@ -98,17 +98,17 @@ function updateUI() {
     
     if (gameState.currentState) {
         currentStateElement.textContent = statesData[gameState.currentState];
-        // Update fixed mobile state display
-        const mobileFixedState = document.getElementById('mobile-fixed-state');
-        if (mobileFixedState) {
-            mobileFixedState.textContent = statesData[gameState.currentState];
+        // Update floating state display
+        const floatingState = document.getElementById('floating-state');
+        if (floatingState) {
+            floatingState.textContent = statesData[gameState.currentState];
         }
     } else {
         currentStateElement.textContent = 'Click Start to Begin';
-        // Clear fixed mobile state display
-        const mobileFixedState = document.getElementById('mobile-fixed-state');
-        if (mobileFixedState) {
-            mobileFixedState.textContent = '';
+        // Clear floating state display
+        const floatingState = document.getElementById('floating-state');
+        if (floatingState) {
+            floatingState.textContent = '';
         }
     }
 }
@@ -323,7 +323,74 @@ playAgainBtn.addEventListener('click', () => {
     resetGame();
 });
 
+// Floating state positioning system
+let floatingStateEnabled = false;
+let updatePositionInterval = null;
+
+function updateFloatingStatePosition() {
+    const floatingState = document.getElementById('floating-state');
+    if (!floatingState || !floatingStateEnabled) return;
+    
+    // Get current viewport dimensions
+    const viewportWidth = window.innerWidth;
+    const viewportHeight = window.innerHeight;
+    
+    // Get current scroll position
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+    
+    // Position at top center of visible viewport
+    const centerX = scrollLeft + (viewportWidth / 2);
+    const topY = scrollTop + 20; // 20px from top of viewport
+    
+    // Get the floating state dimensions
+    const rect = floatingState.getBoundingClientRect();
+    const elementWidth = rect.width || 200; // fallback width
+    
+    // Center horizontally, accounting for element width
+    const finalX = centerX - (elementWidth / 2);
+    
+    // Apply position
+    floatingState.style.left = `${finalX}px`;
+    floatingState.style.top = `${topY}px`;
+}
+
+function toggleFloatingState(enabled) {
+    floatingStateEnabled = enabled;
+    const floatingState = document.getElementById('floating-state');
+    
+    if (enabled) {
+        floatingState.classList.add('enabled');
+        // Start position updates
+        updateFloatingStatePosition();
+        updatePositionInterval = setInterval(updateFloatingStatePosition, 100);
+        
+        // Listen to scroll and resize events
+        window.addEventListener('scroll', updateFloatingStatePosition);
+        window.addEventListener('resize', updateFloatingStatePosition);
+    } else {
+        floatingState.classList.remove('enabled');
+        // Stop position updates
+        if (updatePositionInterval) {
+            clearInterval(updatePositionInterval);
+            updatePositionInterval = null;
+        }
+        
+        // Remove event listeners
+        window.removeEventListener('scroll', updateFloatingStatePosition);
+        window.removeEventListener('resize', updateFloatingStatePosition);
+    }
+}
+
 // Initialize on load
 document.addEventListener('DOMContentLoaded', () => {
     initGame();
+    
+    // Floating state toggle
+    const floatingStateToggle = document.getElementById('floating-state-toggle');
+    if (floatingStateToggle) {
+        floatingStateToggle.addEventListener('change', (e) => {
+            toggleFloatingState(e.target.checked);
+        });
+    }
 });
