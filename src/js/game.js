@@ -483,13 +483,17 @@ function updateZoomCompensation() {
         // Use single transform for better performance (no layout thrashing)
         // Convert leftPosition percentage to pixels for transform
         const leftPixels = (leftPosition * layoutViewportWidth) / 100;
-        floatingState.style.transform = `translate(${leftPixels - (floatingState.offsetWidth / 2)}px, ${topPosition}px) scale(${scale})`;
+        // Account for scale when centering - the visual width will be offsetWidth * scale
+        const scaledWidthOffset = (floatingState.offsetWidth * scale) / 2;
+        floatingState.style.transform = `translate(${leftPixels - scaledWidthOffset}px, ${topPosition}px) scale(${scale})`;
         
     } else {
         // Fallback for browsers without Visual Viewport API  
         const layoutViewportWidth = document.documentElement.clientWidth;
         const leftPixels = (leftPosition * layoutViewportWidth) / 100;
-        floatingState.style.transform = `translate(${leftPixels - (floatingState.offsetWidth / 2)}px, ${topPosition}px) scale(${scale})`;
+        // Account for scale when centering - the visual width will be offsetWidth * scale
+        const scaledWidthOffset = (floatingState.offsetWidth * scale) / 2;
+        floatingState.style.transform = `translate(${leftPixels - scaledWidthOffset}px, ${topPosition}px) scale(${scale})`;
     }
     
 }
