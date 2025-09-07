@@ -1,0 +1,1034 @@
+game.js:518 Force hidden floating state
+game.js:388 Floating State Debug: {toggleEnabled: false, gameActive: false, shouldBeVisible: false, currentClassList: 'floating-state'}
+game.js:443 After update - classList: floating-state
+game.js:507 Toggle called with: true
+game.js:388 Floating State Debug: {toggleEnabled: true, gameActive: false, shouldBeVisible: false, currentClassList: 'floating-state'}
+game.js:443 After update - classList: floating-state
+game.js:388 Floating State Debug: {toggleEnabled: true, gameActive: true, shouldBeVisible: true, currentClassList: 'floating-state'}
+game.js:483 Visual Viewport - Top: 234.6666717529297, Left: 65.33333587646484, ElementTop: 244.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 244.6666717529297px
+game.js:443 After update - classList: floating-state enabled
+game.js:483 Visual Viewport - Top: 234.6666717529297, Left: 65.33333587646484, ElementTop: 244.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 244.6666717529297px
+game.js:483 Visual Viewport - Top: 234.6666717529297, Left: 65.33333587646484, ElementTop: 244.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 244.6666717529297px
+game.js:483 Visual Viewport - Top: 234.6666717529297, Left: 65.33333587646484, ElementTop: 244.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 244.6666717529297px
+game.js:483 Visual Viewport - Top: 234.6666717529297, Left: 65.33333587646484, ElementTop: 244.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 244.6666717529297px
+game.js:483 Visual Viewport - Top: 234.6666717529297, Left: 65.33333587646484, ElementTop: 244.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 244.6666717529297px
+game.js:483 Visual Viewport - Top: 234.6666717529297, Left: 65.33333587646484, ElementTop: 244.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 244.6666717529297px
+game.js:483 Visual Viewport - Top: 234.6666717529297, Left: 65.33333587646484, ElementTop: 244.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 244.6666717529297px
+game.js:483 Visual Viewport - Top: 230, Left: 65.33333587646484, ElementTop: 240px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 240px
+game.js:483 Visual Viewport - Top: 230, Left: 65.33333587646484, ElementTop: 240px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 240px
+game.js:483 Visual Viewport - Top: 220, Left: 65.33333587646484, ElementTop: 230px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 230px
+game.js:483 Visual Viewport - Top: 206, Left: 65.33333587646484, ElementTop: 216px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 216px
+game.js:483 Visual Viewport - Top: 184.6666717529297, Left: 65.33333587646484, ElementTop: 194.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 194.6666717529297px
+game.js:483 Visual Viewport - Top: 167.3333282470703, Left: 65.33333587646484, ElementTop: 177.3333282470703px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 177.3333282470703px
+game.js:483 Visual Viewport - Top: 150.6666717529297, Left: 65.33333587646484, ElementTop: 160.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 160.6666717529297px
+game.js:483 Visual Viewport - Top: 138.6666717529297, Left: 65.33333587646484, ElementTop: 148.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 148.6666717529297px
+game.js:483 Visual Viewport - Top: 138.6666717529297, Left: 65.33333587646484, ElementTop: 148.6666717529297px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 148.6666717529297px
+game.js:483 Visual Viewport - Top: 128, Left: 65.33333587646484, ElementTop: 138px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 138px
+game.js:483 Visual Viewport - Top: 120, Left: 65.33333587646484, ElementTop: 130px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 130px
+game.js:483 Visual Viewport - Top: 110.66666412353516, Left: 65.33333587646484, ElementTop: 120.66666412353516px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 120.66666412353516px
+game.js:483 Visual Viewport - Top: 97.33333587646484, Left: 65.33333587646484, ElementTop: 107.33333587646484px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 107.33333587646484px
+game.js:483 Visual Viewport - Top: 80.66666412353516, Left: 65.33333587646484, ElementTop: 90.66666412353516px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 90.66666412353516px
+game.js:483 Visual Viewport - Top: 66, Left: 65.33333587646484, ElementTop: 76px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 76px
+game.js:483 Visual Viewport - Top: 66, Left: 65.33333587646484, ElementTop: 76px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 76px
+game.js:483 Visual Viewport - Top: 56.66666793823242, Left: 65.33333587646484, ElementTop: 66.66666793823242px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 66.66666793823242px
+game.js:483 Visual Viewport - Top: 52.66666793823242, Left: 65.33333587646484, ElementTop: 62.66666793823242px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 62.66666793823242px
+game.js:483 Visual Viewport - Top: 50.66666793823242, Left: 65.33333587646484, ElementTop: 60.66666793823242px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 60.66666793823242px
+game.js:483 Visual Viewport - Top: 46.66666793823242, Left: 65.33333587646484, ElementTop: 56.66666793823242px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 56.66666793823242px
+game.js:483 Visual Viewport - Top: 40, Left: 65.33333587646484, ElementTop: 50px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 50px
+game.js:483 Visual Viewport - Top: 32, Left: 65.33333587646484, ElementTop: 42px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 42px
+game.js:483 Visual Viewport - Top: 32, Left: 65.33333587646484, ElementTop: 42px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 42px
+game.js:483 Visual Viewport - Top: 27.33333396911621, Left: 65.33333587646484, ElementTop: 37.33333396911621px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 37.33333396911621px
+game.js:483 Visual Viewport - Top: 22.66666603088379, Left: 65.33333587646484, ElementTop: 32.66666603088379px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 32.66666603088379px
+game.js:483 Visual Viewport - Top: 20, Left: 65.33333587646484, ElementTop: 30px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 30px
+game.js:483 Visual Viewport - Top: 15.333333015441895, Left: 65.33333587646484, ElementTop: 25.333333015441895px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 25.333333015441895px
+game.js:483 Visual Viewport - Top: 15.333333015441895, Left: 65.33333587646484, ElementTop: 25.333333015441895px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 25.333333015441895px
+game.js:483 Visual Viewport - Top: 12, Left: 65.33333587646484, ElementTop: 22px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 22px
+game.js:483 Visual Viewport - Top: 9.333333015441895, Left: 65.33333587646484, ElementTop: 19.333333015441895px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 19.333333015441895px
+game.js:483 Visual Viewport - Top: 6.666666507720947, Left: 65.33333587646484, ElementTop: 16.666666507720947px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 16.666666507720947px
+game.js:483 Visual Viewport - Top: 4.666666507720947, Left: 65.33333587646484, ElementTop: 14.666666507720947px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 14.666666507720947px
+game.js:483 Visual Viewport - Top: 2.6666667461395264, Left: 65.33333587646484, ElementTop: 12.666666746139526px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 12.666666746139526px
+game.js:483 Visual Viewport - Top: 1.3333333730697632, Left: 65.33333587646484, ElementTop: 11.333333373069763px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 11.333333373069763px
+game.js:483 Visual Viewport - Top: 1.3333333730697632, Left: 65.33333587646484, ElementTop: 11.333333373069763px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 11.333333373069763px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 65.33333587646484, ElementTop: 10px, Center: 48.2%
+game.js:484 Viewport dimensions: 409.363525390625x670.576416015625
+game.js:493 Zoom: 1.37, Scale: 0.73, Final Top: 10px
+game.js:483 Visual Viewport - Top: 4.666666507720947, Left: 68, ElementTop: 14.666666507720947px, Center: 48.3%
+game.js:484 Viewport dimensions: 404.48046875x662.5775756835938
+game.js:493 Zoom: 1.38, Scale: 0.72, Final Top: 14.666666507720947px
+game.js:483 Visual Viewport - Top: 4.666666507720947, Left: 68, ElementTop: 14.666666507720947px, Center: 48.3%
+game.js:484 Viewport dimensions: 404.48046875x662.5775756835938
+game.js:493 Zoom: 1.38, Scale: 0.72, Final Top: 14.666666507720947px
+game.js:483 Visual Viewport - Top: 12.666666984558105, Left: 72.66666412353516, ElementTop: 22.666666984558105px, Center: 48.3%
+game.js:484 Viewport dimensions: 395.9429931640625x648.59228515625
+game.js:493 Zoom: 1.41, Scale: 0.71, Final Top: 22.666666984558105px
+game.js:483 Visual Viewport - Top: 12.666666984558105, Left: 72.66666412353516, ElementTop: 22.666666984558105px, Center: 48.3%
+game.js:484 Viewport dimensions: 395.9429931640625x648.59228515625
+game.js:493 Zoom: 1.41, Scale: 0.71, Final Top: 22.666666984558105px
+game.js:483 Visual Viewport - Top: 20, Left: 76.66666412353516, ElementTop: 30px, Center: 48.4%
+game.js:484 Viewport dimensions: 388.6205749511719x636.5975341796875
+game.js:493 Zoom: 1.44, Scale: 0.69, Final Top: 30px
+game.js:483 Visual Viewport - Top: 20, Left: 76.66666412353516, ElementTop: 30px, Center: 48.4%
+game.js:484 Viewport dimensions: 388.6205749511719x636.5975341796875
+game.js:493 Zoom: 1.44, Scale: 0.69, Final Top: 30px
+game.js:483 Visual Viewport - Top: 26, Left: 80.66666412353516, ElementTop: 36px, Center: 48.5%
+game.js:484 Viewport dimensions: 381.9425048828125x625.658203125
+game.js:493 Zoom: 1.47, Scale: 0.68, Final Top: 36px
+game.js:483 Visual Viewport - Top: 26, Left: 80.66666412353516, ElementTop: 36px, Center: 48.5%
+game.js:484 Viewport dimensions: 381.9425048828125x625.658203125
+game.js:493 Zoom: 1.47, Scale: 0.68, Final Top: 36px
+game.js:483 Visual Viewport - Top: 34, Left: 85.33333587646484, ElementTop: 44px, Center: 48.6%
+game.js:484 Viewport dimensions: 373.3824768066406x611.6360473632812
+game.js:493 Zoom: 1.50, Scale: 0.67, Final Top: 44px
+game.js:483 Visual Viewport - Top: 34, Left: 85.33333587646484, ElementTop: 44px, Center: 48.6%
+game.js:484 Viewport dimensions: 373.3824768066406x611.6360473632812
+game.js:493 Zoom: 1.50, Scale: 0.67, Final Top: 44px
+game.js:483 Visual Viewport - Top: 40.66666793823242, Left: 89.33333587646484, ElementTop: 50.66666793823242px, Center: 48.7%
+game.js:484 Viewport dimensions: 366.477294921875x600.32470703125
+game.js:493 Zoom: 1.53, Scale: 0.65, Final Top: 50.66666793823242px
+game.js:483 Visual Viewport - Top: 40.66666793823242, Left: 89.33333587646484, ElementTop: 50.66666793823242px, Center: 48.7%
+game.js:484 Viewport dimensions: 366.477294921875x600.32470703125
+game.js:493 Zoom: 1.53, Scale: 0.65, Final Top: 50.66666793823242px
+game.js:483 Visual Viewport - Top: 40.66666793823242, Left: 89.33333587646484, ElementTop: 50.66666793823242px, Center: 48.7%
+game.js:484 Viewport dimensions: 366.477294921875x600.32470703125
+game.js:493 Zoom: 1.53, Scale: 0.65, Final Top: 50.66666793823242px
+game.js:483 Visual Viewport - Top: 46.66666793823242, Left: 92.66666412353516, ElementTop: 56.66666793823242px, Center: 48.7%
+game.js:484 Viewport dimensions: 360.1797180175781x590.0087280273438
+game.js:493 Zoom: 1.55, Scale: 0.64, Final Top: 56.66666793823242px
+game.js:483 Visual Viewport - Top: 46.66666793823242, Left: 92.66666412353516, ElementTop: 56.66666793823242px, Center: 48.7%
+game.js:484 Viewport dimensions: 360.1797180175781x590.0087280273438
+game.js:493 Zoom: 1.55, Scale: 0.64, Final Top: 56.66666793823242px
+game.js:483 Visual Viewport - Top: 52.66666793823242, Left: 96.66666412353516, ElementTop: 62.66666793823242px, Center: 48.8%
+game.js:484 Viewport dimensions: 353.5187072753906x579.0972900390625
+game.js:493 Zoom: 1.58, Scale: 0.63, Final Top: 62.66666793823242px
+game.js:483 Visual Viewport - Top: 52.66666793823242, Left: 96.66666412353516, ElementTop: 62.66666793823242px, Center: 48.8%
+game.js:484 Viewport dimensions: 353.5187072753906x579.0972900390625
+game.js:493 Zoom: 1.58, Scale: 0.63, Final Top: 62.66666793823242px
+game.js:483 Visual Viewport - Top: 60.66666793823242, Left: 101.33333587646484, ElementTop: 70.66666793823242px, Center: 49.0%
+game.js:484 Viewport dimensions: 345.5957336425781x566.1187744140625
+game.js:493 Zoom: 1.62, Scale: 0.62, Final Top: 70.66666793823242px
+game.js:483 Visual Viewport - Top: 60.66666793823242, Left: 101.33333587646484, ElementTop: 70.66666793823242px, Center: 49.0%
+game.js:484 Viewport dimensions: 345.5957336425781x566.1187744140625
+game.js:493 Zoom: 1.62, Scale: 0.62, Final Top: 70.66666793823242px
+game.js:483 Visual Viewport - Top: 68, Left: 105.33333587646484, ElementTop: 78px, Center: 49.0%
+game.js:484 Viewport dimensions: 337.8503723144531x553.4310913085938
+game.js:493 Zoom: 1.66, Scale: 0.60, Final Top: 78px
+game.js:483 Visual Viewport - Top: 68, Left: 105.33333587646484, ElementTop: 78px, Center: 49.0%
+game.js:484 Viewport dimensions: 337.8503723144531x553.4310913085938
+game.js:493 Zoom: 1.66, Scale: 0.60, Final Top: 78px
+game.js:483 Visual Viewport - Top: 75.33333587646484, Left: 110, ElementTop: 85.33333587646484px, Center: 49.1%
+game.js:484 Viewport dimensions: 330.2785949707031x541.0277709960938
+game.js:493 Zoom: 1.70, Scale: 0.59, Final Top: 85.33333587646484px
+game.js:483 Visual Viewport - Top: 75.33333587646484, Left: 110, ElementTop: 85.33333587646484px, Center: 49.1%
+game.js:484 Viewport dimensions: 330.2785949707031x541.0277709960938
+game.js:493 Zoom: 1.70, Scale: 0.59, Final Top: 85.33333587646484px
+game.js:483 Visual Viewport - Top: 82.66666412353516, Left: 114.66666412353516, ElementTop: 92.66666412353516px, Center: 49.2%
+game.js:484 Viewport dimensions: 322.0166320800781x527.493896484375
+game.js:493 Zoom: 1.74, Scale: 0.58, Final Top: 92.66666412353516px
+game.js:483 Visual Viewport - Top: 82.66666412353516, Left: 114.66666412353516, ElementTop: 92.66666412353516px, Center: 49.2%
+game.js:484 Viewport dimensions: 322.0166320800781x527.493896484375
+game.js:493 Zoom: 1.74, Scale: 0.58, Final Top: 92.66666412353516px
+game.js:483 Visual Viewport - Top: 82.66666412353516, Left: 114.66666412353516, ElementTop: 92.66666412353516px, Center: 49.2%
+game.js:484 Viewport dimensions: 322.0166320800781x527.493896484375
+game.js:493 Zoom: 1.74, Scale: 0.58, Final Top: 92.66666412353516px
+game.js:483 Visual Viewport - Top: 89.33333587646484, Left: 118, ElementTop: 99.33333587646484px, Center: 49.2%
+game.js:484 Viewport dimensions: 315.21966552734375x516.3598022460938
+game.js:493 Zoom: 1.78, Scale: 0.56, Final Top: 99.33333587646484px
+game.js:483 Visual Viewport - Top: 89.33333587646484, Left: 118, ElementTop: 99.33333587646484px, Center: 49.2%
+game.js:484 Viewport dimensions: 315.21966552734375x516.3598022460938
+game.js:493 Zoom: 1.78, Scale: 0.56, Final Top: 99.33333587646484px
+game.js:483 Visual Viewport - Top: 92, Left: 120, ElementTop: 102px, Center: 49.3%
+game.js:484 Viewport dimensions: 312.291259765625x511.5628356933594
+game.js:493 Zoom: 1.79, Scale: 0.56, Final Top: 102px
+game.js:483 Visual Viewport - Top: 92, Left: 120, ElementTop: 102px, Center: 49.3%
+game.js:484 Viewport dimensions: 312.291259765625x511.5628356933594
+game.js:493 Zoom: 1.79, Scale: 0.56, Final Top: 102px
+game.js:483 Visual Viewport - Top: 97.33333587646484, Left: 123.33333587646484, ElementTop: 107.33333587646484px, Center: 49.4%
+game.js:484 Viewport dimensions: 306.9248962402344x502.7721862792969
+game.js:493 Zoom: 1.82, Scale: 0.55, Final Top: 107.33333587646484px
+game.js:483 Visual Viewport - Top: 97.33333587646484, Left: 123.33333587646484, ElementTop: 107.33333587646484px, Center: 49.4%
+game.js:484 Viewport dimensions: 306.9248962402344x502.7721862792969
+game.js:493 Zoom: 1.82, Scale: 0.55, Final Top: 107.33333587646484px
+game.js:483 Visual Viewport - Top: 103.33333587646484, Left: 126.66666412353516, ElementTop: 113.33333587646484px, Center: 49.4%
+game.js:484 Viewport dimensions: 300.44647216796875x492.159912109375
+game.js:493 Zoom: 1.86, Scale: 0.54, Final Top: 113.33333587646484px
+game.js:483 Visual Viewport - Top: 103.33333587646484, Left: 126.66666412353516, ElementTop: 113.33333587646484px, Center: 49.4%
+game.js:484 Viewport dimensions: 300.44647216796875x492.159912109375
+game.js:493 Zoom: 1.86, Scale: 0.54, Final Top: 113.33333587646484px
+game.js:483 Visual Viewport - Top: 107.33333587646484, Left: 129.3333282470703, ElementTop: 117.33333587646484px, Center: 49.5%
+game.js:484 Viewport dimensions: 296.0721130371094x484.9942932128906
+game.js:493 Zoom: 1.89, Scale: 0.53, Final Top: 117.33333587646484px
+game.js:483 Visual Viewport - Top: 107.33333587646484, Left: 129.3333282470703, ElementTop: 117.33333587646484px, Center: 49.5%
+game.js:484 Viewport dimensions: 296.0721130371094x484.9942932128906
+game.js:493 Zoom: 1.89, Scale: 0.53, Final Top: 117.33333587646484px
+game.js:483 Visual Viewport - Top: 111.33333587646484, Left: 131.3333282470703, ElementTop: 121.33333587646484px, Center: 49.5%
+game.js:484 Viewport dimensions: 291.7613525390625x477.932861328125
+game.js:493 Zoom: 1.92, Scale: 0.52, Final Top: 121.33333587646484px
+game.js:483 Visual Viewport - Top: 111.33333587646484, Left: 131.3333282470703, ElementTop: 121.33333587646484px, Center: 49.5%
+game.js:484 Viewport dimensions: 291.7613525390625x477.932861328125
+game.js:493 Zoom: 1.92, Scale: 0.52, Final Top: 121.33333587646484px
+game.js:483 Visual Viewport - Top: 111.33333587646484, Left: 131.3333282470703, ElementTop: 121.33333587646484px, Center: 49.5%
+game.js:484 Viewport dimensions: 291.7613525390625x477.932861328125
+game.js:493 Zoom: 1.92, Scale: 0.52, Final Top: 121.33333587646484px
+game.js:483 Visual Viewport - Top: 116.66666412353516, Left: 134.6666717529297, ElementTop: 126.66666412353516px, Center: 49.7%
+game.js:484 Viewport dimensions: 286.7476806640625x469.7200012207031
+game.js:493 Zoom: 1.95, Scale: 0.51, Final Top: 126.66666412353516px
+game.js:483 Visual Viewport - Top: 116.66666412353516, Left: 134.6666717529297, ElementTop: 126.66666412353516px, Center: 49.7%
+game.js:484 Viewport dimensions: 286.7476806640625x469.7200012207031
+game.js:493 Zoom: 1.95, Scale: 0.51, Final Top: 126.66666412353516px
+game.js:483 Visual Viewport - Top: 119.33333587646484, Left: 136.6666717529297, ElementTop: 129.33333587646484px, Center: 49.7%
+game.js:484 Viewport dimensions: 283.3272705078125x464.1170654296875
+game.js:493 Zoom: 1.98, Scale: 0.51, Final Top: 129.33333587646484px
+game.js:483 Visual Viewport - Top: 119.33333587646484, Left: 136.6666717529297, ElementTop: 129.33333587646484px, Center: 49.7%
+game.js:484 Viewport dimensions: 283.3272705078125x464.1170654296875
+game.js:493 Zoom: 1.98, Scale: 0.51, Final Top: 129.33333587646484px
+game.js:483 Visual Viewport - Top: 122.66666412353516, Left: 138, ElementTop: 132.66666412353516px, Center: 49.6%
+game.js:484 Viewport dimensions: 279.9476623535156x458.5809020996094
+game.js:493 Zoom: 2.00, Scale: 0.50, Final Top: 132.66666412353516px
+game.js:483 Visual Viewport - Top: 122.66666412353516, Left: 138, ElementTop: 132.66666412353516px, Center: 49.6%
+game.js:484 Viewport dimensions: 279.9476623535156x458.5809020996094
+game.js:493 Zoom: 2.00, Scale: 0.50, Final Top: 132.66666412353516px
+game.js:483 Visual Viewport - Top: 124.66666412353516, Left: 139.3333282470703, ElementTop: 134.66666412353516px, Center: 49.7%
+game.js:484 Viewport dimensions: 277.71697998046875x454.9268798828125
+game.js:493 Zoom: 2.02, Scale: 0.50, Final Top: 134.66666412353516px
+game.js:483 Visual Viewport - Top: 124.66666412353516, Left: 139.3333282470703, ElementTop: 134.66666412353516px, Center: 49.7%
+game.js:484 Viewport dimensions: 277.71697998046875x454.9268798828125
+game.js:493 Zoom: 2.02, Scale: 0.50, Final Top: 134.66666412353516px
+game.js:483 Visual Viewport - Top: 126.66666412353516, Left: 140.6666717529297, ElementTop: 136.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 275.8717041015625x451.9041442871094
+game.js:493 Zoom: 2.03, Scale: 0.49, Final Top: 136.66666412353516px
+game.js:483 Visual Viewport - Top: 126.66666412353516, Left: 140.6666717529297, ElementTop: 136.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 275.8717041015625x451.9041442871094
+game.js:493 Zoom: 2.03, Scale: 0.49, Final Top: 136.66666412353516px
+game.js:483 Visual Viewport - Top: 128.6666717529297, Left: 141.3333282470703, ElementTop: 138.6666717529297px, Center: 49.7%
+game.js:484 Viewport dimensions: 274.0386657714844x448.9013977050781
+game.js:493 Zoom: 2.04, Scale: 0.49, Final Top: 138.6666717529297px
+game.js:483 Visual Viewport - Top: 128.6666717529297, Left: 141.3333282470703, ElementTop: 138.6666717529297px, Center: 49.7%
+game.js:484 Viewport dimensions: 274.0386657714844x448.9013977050781
+game.js:493 Zoom: 2.04, Scale: 0.49, Final Top: 138.6666717529297px
+game.js:483 Visual Viewport - Top: 128.6666717529297, Left: 141.3333282470703, ElementTop: 138.6666717529297px, Center: 49.7%
+game.js:484 Viewport dimensions: 274.0386657714844x448.9013977050781
+game.js:493 Zoom: 2.04, Scale: 0.49, Final Top: 138.6666717529297px
+game.js:483 Visual Viewport - Top: 130, Left: 142.6666717529297, ElementTop: 140px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 140px
+game.js:483 Visual Viewport - Top: 130, Left: 142.6666717529297, ElementTop: 140px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 140px
+game.js:483 Visual Viewport - Top: 130, Left: 142.6666717529297, ElementTop: 140px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 140px
+game.js:483 Visual Viewport - Top: 130, Left: 142.6666717529297, ElementTop: 140px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 140px
+game.js:483 Visual Viewport - Top: 130, Left: 142.6666717529297, ElementTop: 140px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 140px
+game.js:483 Visual Viewport - Top: 126, Left: 142.6666717529297, ElementTop: 136px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 136px
+game.js:483 Visual Viewport - Top: 126, Left: 142.6666717529297, ElementTop: 136px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 136px
+game.js:483 Visual Viewport - Top: 118.66666412353516, Left: 142.6666717529297, ElementTop: 128.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 128.66666412353516px
+game.js:483 Visual Viewport - Top: 108.66666412353516, Left: 142.6666717529297, ElementTop: 118.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 118.66666412353516px
+game.js:483 Visual Viewport - Top: 102, Left: 142.6666717529297, ElementTop: 112px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 112px
+game.js:483 Visual Viewport - Top: 92.66666412353516, Left: 142.6666717529297, ElementTop: 102.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 102.66666412353516px
+game.js:483 Visual Viewport - Top: 86, Left: 142.6666717529297, ElementTop: 96px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 96px
+game.js:483 Visual Viewport - Top: 80, Left: 142.6666717529297, ElementTop: 90px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 90px
+game.js:483 Visual Viewport - Top: 80, Left: 142.6666717529297, ElementTop: 90px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 90px
+game.js:483 Visual Viewport - Top: 70.66666412353516, Left: 142.6666717529297, ElementTop: 80.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 80.66666412353516px
+game.js:483 Visual Viewport - Top: 65.33333587646484, Left: 142.6666717529297, ElementTop: 75.33333587646484px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 75.33333587646484px
+game.js:483 Visual Viewport - Top: 59.33333206176758, Left: 142.6666717529297, ElementTop: 69.33333206176758px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 69.33333206176758px
+game.js:483 Visual Viewport - Top: 52.66666793823242, Left: 142.6666717529297, ElementTop: 62.66666793823242px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 62.66666793823242px
+game.js:483 Visual Viewport - Top: 46, Left: 142.6666717529297, ElementTop: 56px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 56px
+game.js:483 Visual Viewport - Top: 41.33333206176758, Left: 142.6666717529297, ElementTop: 51.33333206176758px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 51.33333206176758px
+game.js:483 Visual Viewport - Top: 41.33333206176758, Left: 142.6666717529297, ElementTop: 51.33333206176758px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 51.33333206176758px
+game.js:483 Visual Viewport - Top: 35.33333206176758, Left: 142.6666717529297, ElementTop: 45.33333206176758px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 45.33333206176758px
+game.js:483 Visual Viewport - Top: 30, Left: 142.6666717529297, ElementTop: 40px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 40px
+game.js:483 Visual Viewport - Top: 24.66666603088379, Left: 142.6666717529297, ElementTop: 34.66666603088379px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 34.66666603088379px
+game.js:483 Visual Viewport - Top: 18, Left: 142.6666717529297, ElementTop: 28px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 28px
+game.js:483 Visual Viewport - Top: 12.666666984558105, Left: 142.6666717529297, ElementTop: 22.666666984558105px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 22.666666984558105px
+game.js:483 Visual Viewport - Top: 7.333333492279053, Left: 142.6666717529297, ElementTop: 17.333333492279053px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 17.333333492279053px
+game.js:483 Visual Viewport - Top: 7.333333492279053, Left: 142.6666717529297, ElementTop: 17.333333492279053px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 17.333333492279053px
+game.js:483 Visual Viewport - Top: 1.3333333730697632, Left: 142.6666717529297, ElementTop: 11.333333373069763px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 11.333333373069763px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 0, Left: 142.6666717529297, ElementTop: 10px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 10px
+game.js:483 Visual Viewport - Top: 3.3333332538604736, Left: 142.6666717529297, ElementTop: 13.333333253860474px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 13.333333253860474px
+game.js:483 Visual Viewport - Top: 8, Left: 142.6666717529297, ElementTop: 18px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 18px
+game.js:483 Visual Viewport - Top: 14, Left: 142.6666717529297, ElementTop: 24px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 24px
+game.js:483 Visual Viewport - Top: 22.66666603088379, Left: 142.6666717529297, ElementTop: 32.66666603088379px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 32.66666603088379px
+game.js:483 Visual Viewport - Top: 32.66666793823242, Left: 142.6666717529297, ElementTop: 42.66666793823242px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 42.66666793823242px
+game.js:483 Visual Viewport - Top: 42, Left: 142.6666717529297, ElementTop: 52px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 52px
+game.js:483 Visual Viewport - Top: 42, Left: 142.6666717529297, ElementTop: 52px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 52px
+game.js:483 Visual Viewport - Top: 48.66666793823242, Left: 142.6666717529297, ElementTop: 58.66666793823242px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 58.66666793823242px
+game.js:483 Visual Viewport - Top: 55.33333206176758, Left: 142.6666717529297, ElementTop: 65.33333206176758px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 65.33333206176758px
+game.js:483 Visual Viewport - Top: 60, Left: 142.6666717529297, ElementTop: 70px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 70px
+game.js:483 Visual Viewport - Top: 62.66666793823242, Left: 142.6666717529297, ElementTop: 72.66666793823242px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 72.66666793823242px
+game.js:483 Visual Viewport - Top: 66, Left: 142.6666717529297, ElementTop: 76px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 76px
+game.js:483 Visual Viewport - Top: 72.66666412353516, Left: 142.6666717529297, ElementTop: 82.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 82.66666412353516px
+game.js:483 Visual Viewport - Top: 72.66666412353516, Left: 142.6666717529297, ElementTop: 82.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 82.66666412353516px
+game.js:483 Visual Viewport - Top: 77.33333587646484, Left: 142.6666717529297, ElementTop: 87.33333587646484px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 87.33333587646484px
+game.js:483 Visual Viewport - Top: 82, Left: 142.6666717529297, ElementTop: 92px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 92px
+game.js:483 Visual Viewport - Top: 86.66666412353516, Left: 142.6666717529297, ElementTop: 96.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 96.66666412353516px
+game.js:483 Visual Viewport - Top: 90.66666412353516, Left: 142.6666717529297, ElementTop: 100.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 100.66666412353516px
+game.js:483 Visual Viewport - Top: 94, Left: 142.6666717529297, ElementTop: 104px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 104px
+game.js:483 Visual Viewport - Top: 100.66666412353516, Left: 142.6666717529297, ElementTop: 110.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 110.66666412353516px
+game.js:483 Visual Viewport - Top: 100.66666412353516, Left: 142.6666717529297, ElementTop: 110.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 110.66666412353516px
+game.js:483 Visual Viewport - Top: 104.66666412353516, Left: 142.6666717529297, ElementTop: 114.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 114.66666412353516px
+game.js:483 Visual Viewport - Top: 112.66666412353516, Left: 142.6666717529297, ElementTop: 122.66666412353516px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 122.66666412353516px
+game.js:483 Visual Viewport - Top: 119.33333587646484, Left: 142.6666717529297, ElementTop: 129.33333587646484px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 129.33333587646484px
+game.js:483 Visual Viewport - Top: 123.33333587646484, Left: 142.6666717529297, ElementTop: 133.33333587646484px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 133.33333587646484px
+game.js:483 Visual Viewport - Top: 131.3333282470703, Left: 142.6666717529297, ElementTop: 141.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 141.3333282470703px
+game.js:483 Visual Viewport - Top: 135.3333282470703, Left: 142.6666717529297, ElementTop: 145.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 145.3333282470703px
+game.js:483 Visual Viewport - Top: 135.3333282470703, Left: 142.6666717529297, ElementTop: 145.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 145.3333282470703px
+game.js:483 Visual Viewport - Top: 141.3333282470703, Left: 142.6666717529297, ElementTop: 151.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 151.3333282470703px
+game.js:483 Visual Viewport - Top: 148, Left: 142.6666717529297, ElementTop: 158px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 158px
+game.js:483 Visual Viewport - Top: 156, Left: 142.6666717529297, ElementTop: 166px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 166px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 172.6666717529297, Left: 142.6666717529297, ElementTop: 182.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 182.6666717529297px
+game.js:483 Visual Viewport - Top: 184.6666717529297, Left: 142.6666717529297, ElementTop: 194.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 194.6666717529297px
+game.js:483 Visual Viewport - Top: 184.6666717529297, Left: 142.6666717529297, ElementTop: 194.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 194.6666717529297px
+game.js:483 Visual Viewport - Top: 194, Left: 142.6666717529297, ElementTop: 204px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 204px
+game.js:483 Visual Viewport - Top: 203.3333282470703, Left: 142.6666717529297, ElementTop: 213.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 213.3333282470703px
+game.js:483 Visual Viewport - Top: 210, Left: 142.6666717529297, ElementTop: 220px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 220px
+game.js:483 Visual Viewport - Top: 218.6666717529297, Left: 142.6666717529297, ElementTop: 228.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 228.6666717529297px
+game.js:483 Visual Viewport - Top: 226, Left: 142.6666717529297, ElementTop: 236px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 236px
+game.js:483 Visual Viewport - Top: 232.6666717529297, Left: 142.6666717529297, ElementTop: 242.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 242.6666717529297px
+game.js:483 Visual Viewport - Top: 232.6666717529297, Left: 142.6666717529297, ElementTop: 242.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 242.6666717529297px
+game.js:483 Visual Viewport - Top: 237.3333282470703, Left: 142.6666717529297, ElementTop: 247.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 247.3333282470703px
+game.js:483 Visual Viewport - Top: 242, Left: 142.6666717529297, ElementTop: 252px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 252px
+game.js:483 Visual Viewport - Top: 247.3333282470703, Left: 142.6666717529297, ElementTop: 257.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 257.3333282470703px
+game.js:483 Visual Viewport - Top: 252, Left: 142.6666717529297, ElementTop: 262px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 262px
+game.js:483 Visual Viewport - Top: 255.3333282470703, Left: 142.6666717529297, ElementTop: 265.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 265.3333282470703px
+game.js:483 Visual Viewport - Top: 258, Left: 142.6666717529297, ElementTop: 268px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 268px
+game.js:483 Visual Viewport - Top: 258, Left: 142.6666717529297, ElementTop: 268px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 268px
+game.js:483 Visual Viewport - Top: 262.6666564941406, Left: 142.6666717529297, ElementTop: 272.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 272.6666564941406px
+game.js:483 Visual Viewport - Top: 268, Left: 142.6666717529297, ElementTop: 278px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 278px
+game.js:483 Visual Viewport - Top: 274, Left: 142.6666717529297, ElementTop: 284px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 284px
+game.js:483 Visual Viewport - Top: 278, Left: 142.6666717529297, ElementTop: 288px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 288px
+game.js:483 Visual Viewport - Top: 282, Left: 142.6666717529297, ElementTop: 292px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 292px
+game.js:483 Visual Viewport - Top: 286.6666564941406, Left: 142.6666717529297, ElementTop: 296.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 296.6666564941406px
+game.js:483 Visual Viewport - Top: 286.6666564941406, Left: 142.6666717529297, ElementTop: 296.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 296.6666564941406px
+game.js:483 Visual Viewport - Top: 292, Left: 142.6666717529297, ElementTop: 302px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 302px
+game.js:483 Visual Viewport - Top: 296.6666564941406, Left: 142.6666717529297, ElementTop: 306.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 306.6666564941406px
+game.js:483 Visual Viewport - Top: 302, Left: 142.6666717529297, ElementTop: 312px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 312px
+game.js:483 Visual Viewport - Top: 306, Left: 142.6666717529297, ElementTop: 316px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 316px
+game.js:483 Visual Viewport - Top: 312.6666564941406, Left: 142.6666717529297, ElementTop: 322.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 322.6666564941406px
+game.js:483 Visual Viewport - Top: 318, Left: 142.6666717529297, ElementTop: 328px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 328px
+game.js:483 Visual Viewport - Top: 318, Left: 142.6666717529297, ElementTop: 328px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 328px
+game.js:483 Visual Viewport - Top: 324, Left: 142.6666717529297, ElementTop: 334px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 334px
+game.js:483 Visual Viewport - Top: 330, Left: 142.6666717529297, ElementTop: 340px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 340px
+game.js:483 Visual Viewport - Top: 333.3333435058594, Left: 142.6666717529297, ElementTop: 343.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 343.3333435058594px
+game.js:483 Visual Viewport - Top: 337.3333435058594, Left: 142.6666717529297, ElementTop: 347.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 347.3333435058594px
+game.js:483 Visual Viewport - Top: 341.3333435058594, Left: 142.6666717529297, ElementTop: 351.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 351.3333435058594px
+game.js:483 Visual Viewport - Top: 343.3333435058594, Left: 142.6666717529297, ElementTop: 353.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 353.3333435058594px
+game.js:483 Visual Viewport - Top: 343.3333435058594, Left: 142.6666717529297, ElementTop: 353.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 353.3333435058594px
+game.js:483 Visual Viewport - Top: 344.6666564941406, Left: 142.6666717529297, ElementTop: 354.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 354.6666564941406px
+game.js:483 Visual Viewport - Top: 344.6666564941406, Left: 142.6666717529297, ElementTop: 354.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 354.6666564941406px
+game.js:483 Visual Viewport - Top: 343.3333435058594, Left: 142.6666717529297, ElementTop: 353.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 353.3333435058594px
+game.js:483 Visual Viewport - Top: 340, Left: 142.6666717529297, ElementTop: 350px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 350px
+game.js:483 Visual Viewport - Top: 334, Left: 142.6666717529297, ElementTop: 344px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 344px
+game.js:483 Visual Viewport - Top: 327.3333435058594, Left: 142.6666717529297, ElementTop: 337.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 337.3333435058594px
+game.js:483 Visual Viewport - Top: 318, Left: 142.6666717529297, ElementTop: 328px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 328px
+game.js:483 Visual Viewport - Top: 318, Left: 142.6666717529297, ElementTop: 328px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 328px
+game.js:483 Visual Viewport - Top: 311.3333435058594, Left: 142.6666717529297, ElementTop: 321.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 321.3333435058594px
+game.js:483 Visual Viewport - Top: 304.6666564941406, Left: 142.6666717529297, ElementTop: 314.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 314.6666564941406px
+game.js:483 Visual Viewport - Top: 301.3333435058594, Left: 142.6666717529297, ElementTop: 311.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 311.3333435058594px
+game.js:483 Visual Viewport - Top: 297.3333435058594, Left: 142.6666717529297, ElementTop: 307.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 307.3333435058594px
+game.js:483 Visual Viewport - Top: 294.6666564941406, Left: 142.6666717529297, ElementTop: 304.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 304.6666564941406px
+game.js:483 Visual Viewport - Top: 291.3333435058594, Left: 142.6666717529297, ElementTop: 301.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 301.3333435058594px
+game.js:483 Visual Viewport - Top: 291.3333435058594, Left: 142.6666717529297, ElementTop: 301.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 301.3333435058594px
+game.js:483 Visual Viewport - Top: 287.3333435058594, Left: 142.6666717529297, ElementTop: 297.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 297.3333435058594px
+game.js:483 Visual Viewport - Top: 283.3333435058594, Left: 142.6666717529297, ElementTop: 293.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 293.3333435058594px
+game.js:483 Visual Viewport - Top: 279.3333435058594, Left: 142.6666717529297, ElementTop: 289.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 289.3333435058594px
+game.js:483 Visual Viewport - Top: 274.6666564941406, Left: 142.6666717529297, ElementTop: 284.6666564941406px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 284.6666564941406px
+game.js:483 Visual Viewport - Top: 271.3333435058594, Left: 142.6666717529297, ElementTop: 281.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 281.3333435058594px
+game.js:483 Visual Viewport - Top: 268, Left: 142.6666717529297, ElementTop: 278px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 278px
+game.js:483 Visual Viewport - Top: 268, Left: 142.6666717529297, ElementTop: 278px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 278px
+game.js:483 Visual Viewport - Top: 265.3333435058594, Left: 142.6666717529297, ElementTop: 275.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 275.3333435058594px
+game.js:483 Visual Viewport - Top: 261.3333435058594, Left: 142.6666717529297, ElementTop: 271.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 271.3333435058594px
+game.js:483 Visual Viewport - Top: 257.3333435058594, Left: 142.6666717529297, ElementTop: 267.3333435058594px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 267.3333435058594px
+game.js:483 Visual Viewport - Top: 253.3333282470703, Left: 142.6666717529297, ElementTop: 263.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 263.3333282470703px
+game.js:483 Visual Viewport - Top: 248.6666717529297, Left: 142.6666717529297, ElementTop: 258.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 258.6666717529297px
+game.js:483 Visual Viewport - Top: 243.3333282470703, Left: 142.6666717529297, ElementTop: 253.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 253.3333282470703px
+game.js:483 Visual Viewport - Top: 243.3333282470703, Left: 142.6666717529297, ElementTop: 253.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 253.3333282470703px
+game.js:483 Visual Viewport - Top: 238, Left: 142.6666717529297, ElementTop: 248px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 248px
+game.js:483 Visual Viewport - Top: 234.6666717529297, Left: 142.6666717529297, ElementTop: 244.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 244.6666717529297px
+game.js:483 Visual Viewport - Top: 230.6666717529297, Left: 142.6666717529297, ElementTop: 240.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 240.6666717529297px
+game.js:483 Visual Viewport - Top: 227.3333282470703, Left: 142.6666717529297, ElementTop: 237.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 237.3333282470703px
+game.js:483 Visual Viewport - Top: 222.6666717529297, Left: 142.6666717529297, ElementTop: 232.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 232.6666717529297px
+game.js:483 Visual Viewport - Top: 216, Left: 142.6666717529297, ElementTop: 226px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 226px
+game.js:483 Visual Viewport - Top: 216, Left: 142.6666717529297, ElementTop: 226px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 226px
+game.js:483 Visual Viewport - Top: 210.6666717529297, Left: 142.6666717529297, ElementTop: 220.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 220.6666717529297px
+game.js:483 Visual Viewport - Top: 206, Left: 142.6666717529297, ElementTop: 216px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 216px
+game.js:483 Visual Viewport - Top: 200, Left: 142.6666717529297, ElementTop: 210px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 210px
+game.js:483 Visual Viewport - Top: 194.6666717529297, Left: 142.6666717529297, ElementTop: 204.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 204.6666717529297px
+game.js:483 Visual Viewport - Top: 190.6666717529297, Left: 142.6666717529297, ElementTop: 200.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 200.6666717529297px
+game.js:483 Visual Viewport - Top: 186, Left: 142.6666717529297, ElementTop: 196px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 196px
+game.js:483 Visual Viewport - Top: 186, Left: 142.6666717529297, ElementTop: 196px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 196px
+game.js:483 Visual Viewport - Top: 182.6666717529297, Left: 142.6666717529297, ElementTop: 192.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 192.6666717529297px
+game.js:483 Visual Viewport - Top: 179.3333282470703, Left: 142.6666717529297, ElementTop: 189.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 189.3333282470703px
+game.js:483 Visual Viewport - Top: 177.3333282470703, Left: 142.6666717529297, ElementTop: 187.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 187.3333282470703px
+game.js:483 Visual Viewport - Top: 174.6666717529297, Left: 142.6666717529297, ElementTop: 184.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 184.6666717529297px
+game.js:483 Visual Viewport - Top: 172.6666717529297, Left: 142.6666717529297, ElementTop: 182.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 182.6666717529297px
+game.js:483 Visual Viewport - Top: 171.3333282470703, Left: 142.6666717529297, ElementTop: 181.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 181.3333282470703px
+game.js:483 Visual Viewport - Top: 170.6666717529297, Left: 142.6666717529297, ElementTop: 180.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 180.6666717529297px
+game.js:483 Visual Viewport - Top: 170.6666717529297, Left: 142.6666717529297, ElementTop: 180.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 180.6666717529297px
+game.js:483 Visual Viewport - Top: 170, Left: 142.6666717529297, ElementTop: 180px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 180px
+game.js:483 Visual Viewport - Top: 169.3333282470703, Left: 142.6666717529297, ElementTop: 179.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 179.3333282470703px
+game.js:483 Visual Viewport - Top: 168, Left: 142.6666717529297, ElementTop: 178px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 178px
+game.js:483 Visual Viewport - Top: 166.6666717529297, Left: 142.6666717529297, ElementTop: 176.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 176.6666717529297px
+game.js:483 Visual Viewport - Top: 166.6666717529297, Left: 142.6666717529297, ElementTop: 176.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 176.6666717529297px
+game.js:483 Visual Viewport - Top: 165.3333282470703, Left: 142.6666717529297, ElementTop: 175.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 175.3333282470703px
+game.js:483 Visual Viewport - Top: 164.6666717529297, Left: 142.6666717529297, ElementTop: 174.6666717529297px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 174.6666717529297px
+game.js:483 Visual Viewport - Top: 164, Left: 142.6666717529297, ElementTop: 174px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 174px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+game.js:493 Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+game.js:483 Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+game.js:484 Viewport dimensions: 272.58099365234375x446.5136413574219
+ Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+ Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+ Viewport dimensions: 272.58099365234375x446.5136413574219
+ Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+ Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+ Viewport dimensions: 272.58099365234375x446.5136413574219
+ Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+ Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+ Viewport dimensions: 272.58099365234375x446.5136413574219
+ Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+ Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+ Viewport dimensions: 272.58099365234375x446.5136413574219
+ Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+ Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+ Viewport dimensions: 272.58099365234375x446.5136413574219
+ Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+ Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+ Viewport dimensions: 272.58099365234375x446.5136413574219
+ Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px
+ Visual Viewport - Top: 163.3333282470703, Left: 142.6666717529297, ElementTop: 173.3333282470703px, Center: 49.8%
+ Viewport dimensions: 272.58099365234375x446.5136413574219
+ Zoom: 2.05, Scale: 0.49, Final Top: 173.3333282470703px

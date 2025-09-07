@@ -460,13 +460,14 @@ function updateZoomCompensation() {
     
     // Use Visual Viewport API for accurate positioning when zoomed
     if (window.visualViewport) {
-        // CRITICAL: Always position the TOP EDGE of the floating box at the top of the visual viewport
-        // This ensures the ENTIRE box is visible, not just part of it
+        // CRITICAL FIX: The offsetTop represents how far down the visual viewport is scrolled
+        // We want to position the element at the VISUAL TOP (what user sees)
+        // This should be offsetTop + small margin for the element's top edge
         const offsetTop = window.visualViewport.offsetTop || 0;
         const offsetLeft = window.visualViewport.offsetLeft || 0;
         
-        // Position the TOP EDGE of the element at the visual viewport top
-        // Use a smaller margin to ensure it's clearly visible at the top
+        // Position element at the TOP of what the user can actually see
+        // offsetTop is how far down we've scrolled, so this is the visual top
         topPosition = offsetTop + 10;
         
         // For horizontal centering, calculate center of visual viewport in layout coordinates
@@ -474,14 +475,15 @@ function updateZoomCompensation() {
         const layoutViewportWidth = document.documentElement.clientWidth;
         leftPosition = (visualViewportCenter / layoutViewportWidth) * 100;
         
-        // Apply positioning - this ensures the element's top edge is always at visual viewport top
+        // Apply positioning
         floatingState.style.left = `${leftPosition}%`;
         floatingState.style.top = `${topPosition}px`;
         floatingState.style.transform = `translateX(-50%) scale(${scale})`;
         
         // Debug logging
-        console.log(`Visual Viewport - Top: ${offsetTop}, Left: ${offsetLeft}, ElementTop: ${topPosition}px, Center: ${leftPosition.toFixed(1)}%`);
+        console.log(`Visual Viewport - ScrollTop: ${offsetTop}, ScrollLeft: ${offsetLeft}, ElementTop: ${topPosition}px, Center: ${leftPosition.toFixed(1)}%`);
         console.log(`Viewport dimensions: ${window.visualViewport.width}x${window.visualViewport.height}`);
+        console.log(`Page scroll: ${window.pageYOffset}, Document scroll: ${document.documentElement.scrollTop}`);
     } else {
         // Fallback for browsers without Visual Viewport API
         floatingState.style.left = `${leftPosition}%`;
