@@ -390,8 +390,8 @@ function updateFloatingStateVisibility() {
         // Start zoom compensation if not already running
         if (!zoomCompensationInterval) {
             updateZoomCompensation();
-            // More frequent updates to ensure floating box stays positioned correctly
-            zoomCompensationInterval = setInterval(updateZoomCompensation, 100);
+            // Much more frequent updates for smooth positioning (60fps-like)
+            zoomCompensationInterval = setInterval(updateZoomCompensation, 16);
             
             // Listen for various events - use passive listeners for better performance
             window.addEventListener('resize', updateZoomCompensation);
