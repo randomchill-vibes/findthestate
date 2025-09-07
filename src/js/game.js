@@ -335,6 +335,7 @@ playAgainBtn.addEventListener('click', () => {
 // Floating state with zoom compensation  
 let floatingStateToggleEnabled = false; // User's toggle preference
 let zoomCompensationInterval = null;
+let pendingUpdate = false; // Prevent multiple RAF calls
 
 function getZoomLevel() {
     // Multiple methods to detect zoom level, with fallbacks
@@ -389,28 +390,27 @@ function updateFloatingStateVisibility() {
         floatingState.classList.add('enabled');
         // Start zoom compensation if not already running
         if (!zoomCompensationInterval) {
-            updateZoomCompensation();
-            // PURE EVENT-DRIVEN - no timer interval
+            requestZoomUpdate(); // Initial update
             zoomCompensationInterval = true; // Just track that we're active
             
             // Listen for all relevant events - use passive listeners for better performance
-            window.addEventListener('resize', updateZoomCompensation);
+            window.addEventListener('resize', requestZoomUpdate);
             window.addEventListener('wheel', handleWheelZoom);
             
             // Scroll tracking
-            window.addEventListener('scroll', updateZoomCompensation, { passive: true });
-            document.addEventListener('scroll', updateZoomCompensation, { passive: true });
+            window.addEventListener('scroll', requestZoomUpdate, { passive: true });
+            document.addEventListener('scroll', requestZoomUpdate, { passive: true });
             
             // Visual Viewport API events (most reliable for zoom/scroll detection)
             if (window.visualViewport) {
-                window.visualViewport.addEventListener('resize', updateZoomCompensation);
-                window.visualViewport.addEventListener('scroll', updateZoomCompensation);
+                window.visualViewport.addEventListener('resize', requestZoomUpdate);
+                window.visualViewport.addEventListener('scroll', requestZoomUpdate);
             }
             
             // Touch events for mobile
-            window.addEventListener('touchstart', updateZoomCompensation, { passive: true });
-            window.addEventListener('touchmove', updateZoomCompensation, { passive: true });
-            window.addEventListener('touchend', updateZoomCompensation, { passive: true });
+            window.addEventListener('touchstart', requestZoomUpdate, { passive: true });
+            window.addEventListener('touchmove', requestZoomUpdate, { passive: true });
+            window.addEventListener('touchend', requestZoomUpdate, { passive: true });
         }
     } else {
         floatingState.classList.remove('enabled');
@@ -420,27 +420,36 @@ function updateFloatingStateVisibility() {
             zoomCompensationInterval = null;
             
             // Remove all event listeners
-            window.removeEventListener('resize', updateZoomCompensation);
+            window.removeEventListener('resize', requestZoomUpdate);
             window.removeEventListener('wheel', handleWheelZoom);
-            window.removeEventListener('scroll', updateZoomCompensation);
-            document.removeEventListener('scroll', updateZoomCompensation);
+            window.removeEventListener('scroll', requestZoomUpdate);
+            document.removeEventListener('scroll', requestZoomUpdate);
             
             if (window.visualViewport) {
-                window.visualViewport.removeEventListener('resize', updateZoomCompensation);
-                window.visualViewport.removeEventListener('scroll', updateZoomCompensation);
+                window.visualViewport.removeEventListener('resize', requestZoomUpdate);
+                window.visualViewport.removeEventListener('scroll', requestZoomUpdate);
             }
             
             // Remove touch events
-            window.removeEventListener('touchstart', updateZoomCompensation);
-            window.removeEventListener('touchmove', updateZoomCompensation);
-            window.removeEventListener('touchend', updateZoomCompensation);
+            window.removeEventListener('touchstart', requestZoomUpdate);
+            window.removeEventListener('touchmove', requestZoomUpdate);
+            window.removeEventListener('touchend', requestZoomUpdate);
             
-            floatingState.style.transform = '';
-            floatingState.style.left = '';
-            floatingState.style.top = '';
+            floatingState.style.transform = 'translate(0, 0)';
         }
     }
     
+}
+
+// Request smooth update synchronized with browser rendering
+function requestZoomUpdate() {
+    if (!pendingUpdate) {
+        pendingUpdate = true;
+        requestAnimationFrame(() => {
+            updateZoomCompensation();
+            pendingUpdate = false;
+        });
+    }
 }
 
 function updateZoomCompensation() {
@@ -460,14 +469,10 @@ function updateZoomCompensation() {
     
     // Use Visual Viewport API for accurate positioning when zoomed
     if (window.visualViewport) {
-        // CRITICAL FIX: The offsetTop represents how far down the visual viewport is scrolled
-        // We want to position the element at the VISUAL TOP (what user sees)
-        // This should be offsetTop + small margin for the element's top edge
         const offsetTop = window.visualViewport.offsetTop || 0;
         const offsetLeft = window.visualViewport.offsetLeft || 0;
         
         // Position element at the TOP of what the user can actually see
-        // offsetTop is how far down we've scrolled, so this is the visual top
         topPosition = offsetTop + 10;
         
         // For horizontal centering, calculate center of visual viewport in layout coordinates
@@ -475,16 +480,16 @@ function updateZoomCompensation() {
         const layoutViewportWidth = document.documentElement.clientWidth;
         leftPosition = (visualViewportCenter / layoutViewportWidth) * 100;
         
-        // Apply positioning
-        floatingState.style.left = `${leftPosition}%`;
-        floatingState.style.top = `${topPosition}px`;
-        floatingState.style.transform = `translateX(-50%) scale(${scale})`;
+        // Use single transform for better performance (no layout thrashing)
+        // Convert leftPosition percentage to pixels for transform
+        const leftPixels = (leftPosition * layoutViewportWidth) / 100;
+        floatingState.style.transform = `translate(${leftPixels - (floatingState.offsetWidth / 2)}px, ${topPosition}px) scale(${scale})`;
         
     } else {
-        // Fallback for browsers without Visual Viewport API
-        floatingState.style.left = `${leftPosition}%`;
-        floatingState.style.top = `${topPosition}px`;
-        floatingState.style.transform = `translateX(-50%) scale(${scale})`;
+        // Fallback for browsers without Visual Viewport API  
+        const layoutViewportWidth = document.documentElement.clientWidth;
+        const leftPixels = (leftPosition * layoutViewportWidth) / 100;
+        floatingState.style.transform = `translate(${leftPixels - (floatingState.offsetWidth / 2)}px, ${topPosition}px) scale(${scale})`;
     }
     
 }
@@ -493,8 +498,8 @@ function updateZoomCompensation() {
 function handleWheelZoom(event) {
     // Only update if Ctrl key is pressed (zoom gesture)
     if (event.ctrlKey || event.metaKey) {
-        // Small delay to let the zoom take effect
-        setTimeout(updateZoomCompensation, 10);
+        // Small delay to let the zoom take effect, then request smooth update
+        setTimeout(requestZoomUpdate, 10);
     }
 }
 

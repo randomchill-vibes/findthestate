@@ -228,10 +228,10 @@ input:checked + .slider:before {
 /* Floating viewport-aware state name */
 .floating-state {
     position: fixed !important;
-    /* Remove !important from positioning properties to allow JavaScript control */
-    top: 20px;
-    left: 50%;
-    transform: translateX(-50%);
+    /* No top/left - using pure transform positioning */
+    top: 0;
+    left: 0;
+    transform: translate(0, 0);
     z-index: 9999 !important;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -245,9 +245,11 @@ input:checked + .slider:before {
     display: none;
     pointer-events: none;
     white-space: nowrap;
-    transform-origin: top center;
-    /* Smooth transitions for positioning changes */
-    transition: top 0.3s ease-out, left 0.3s ease-out, transform 0.3s ease-out;
+    transform-origin: top left;
+    /* Remove transitions - using requestAnimationFrame for smooth updates */
+    transition: none;
+    /* Optimize for transforms */
+    will-change: transform;
 }
 
 .floating-state.enabled {
