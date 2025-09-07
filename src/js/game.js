@@ -402,6 +402,7 @@ function updateFloatingStateVisibility() {
             // Listen for various zoom-related events
             window.addEventListener('resize', updateZoomCompensation);
             window.addEventListener('wheel', handleWheelZoom);
+            window.addEventListener('scroll', updateZoomCompensation);
             
             // Visual Viewport API events (more reliable for zoom detection)
             if (window.visualViewport) {
@@ -420,6 +421,7 @@ function updateFloatingStateVisibility() {
             // Remove all event listeners
             window.removeEventListener('resize', updateZoomCompensation);
             window.removeEventListener('wheel', handleWheelZoom);
+            window.removeEventListener('scroll', updateZoomCompensation);
             
             if (window.visualViewport) {
                 window.visualViewport.removeEventListener('resize', updateZoomCompensation);
@@ -427,6 +429,8 @@ function updateFloatingStateVisibility() {
             }
             
             floatingState.style.transform = '';
+            floatingState.style.left = '';
+            floatingState.style.top = '';
         }
     }
     
@@ -445,15 +449,41 @@ function updateZoomCompensation() {
     // When zoomed out (zoom < 1), scale up the element
     const scale = 1 / zoomLevel;
     
-    // Apply both centering and zoom compensation
-    floatingState.style.transform = `translateX(-50%) scale(${scale})`;
+    // Calculate position relative to visual viewport
+    let topPosition = 20; // Base offset from top
+    let leftPosition = 50; // Base percentage from left
     
-    // Also adjust the position to stay at the top of the viewport
-    // The fixed positioning should handle this, but we ensure it stays visible
-    floatingState.style.top = '20px';
+    // Use Visual Viewport API for accurate positioning when zoomed
+    if (window.visualViewport) {
+        // When zoomed in, the visual viewport can be offset within the layout viewport
+        // We need to position relative to the visual viewport, not the layout viewport
+        const offsetTop = window.visualViewport.offsetTop || 0;
+        const offsetLeft = window.visualViewport.offsetLeft || 0;
+        
+        // Position the element at the top of the visual viewport
+        topPosition = offsetTop + 20;
+        
+        // For horizontal centering, we need to account for the visual viewport's position
+        // Calculate the center of the visual viewport in layout viewport coordinates
+        const visualViewportCenter = offsetLeft + (window.visualViewport.width / 2);
+        const layoutViewportWidth = document.documentElement.clientWidth;
+        leftPosition = (visualViewportCenter / layoutViewportWidth) * 100;
+        
+        floatingState.style.left = `${leftPosition}%`;
+        floatingState.style.top = `${topPosition}px`;
+        floatingState.style.transform = `translateX(-50%) scale(${scale})`;
+        
+        // Debug logging
+        console.log(`Visual Viewport - Top: ${offsetTop}, Left: ${offsetLeft}, Center: ${leftPosition.toFixed(1)}%`);
+    } else {
+        // Fallback for browsers without Visual Viewport API
+        floatingState.style.left = `${leftPosition}%`;
+        floatingState.style.top = `${topPosition}px`;
+        floatingState.style.transform = `translateX(-50%) scale(${scale})`;
+    }
     
     // Debug logging (can be removed in production)
-    console.log(`Zoom level: ${zoomLevel.toFixed(2)}, Scale: ${scale.toFixed(2)}`);
+    console.log(`Zoom level: ${zoomLevel.toFixed(2)}, Scale: ${scale.toFixed(2)}, Top: ${topPosition}px`);
 }
 
 // Handle Ctrl+Wheel zoom events
