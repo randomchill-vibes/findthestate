@@ -384,13 +384,6 @@ function updateFloatingStateVisibility() {
     
     const shouldBeVisible = floatingStateToggleEnabled && gameState.isGameActive;
     
-    // Debug logging
-    console.log(`Floating State Debug:`, {
-        toggleEnabled: floatingStateToggleEnabled,
-        gameActive: gameState.isGameActive,
-        shouldBeVisible: shouldBeVisible,
-        currentClassList: floatingState.className
-    });
     
     if (shouldBeVisible) {
         floatingState.classList.add('enabled');
@@ -439,8 +432,6 @@ function updateFloatingStateVisibility() {
         }
     }
     
-    // Confirm final state
-    console.log(`After update - classList:`, floatingState.className);
 }
 
 function updateZoomCompensation() {
@@ -480,10 +471,6 @@ function updateZoomCompensation() {
         floatingState.style.top = `${topPosition}px`;
         floatingState.style.transform = `translateX(-50%) scale(${scale})`;
         
-        // Debug logging
-        console.log(`Visual Viewport - ScrollTop: ${offsetTop}, ScrollLeft: ${offsetLeft}, ElementTop: ${topPosition}px, Center: ${leftPosition.toFixed(1)}%`);
-        console.log(`Viewport dimensions: ${window.visualViewport.width}x${window.visualViewport.height}`);
-        console.log(`Page scroll: ${window.pageYOffset}, Document scroll: ${document.documentElement.scrollTop}`);
     } else {
         // Fallback for browsers without Visual Viewport API
         floatingState.style.left = `${leftPosition}%`;
@@ -491,8 +478,6 @@ function updateZoomCompensation() {
         floatingState.style.transform = `translateX(-50%) scale(${scale})`;
     }
     
-    // Debug logging (can be removed in production)
-    console.log(`Zoom: ${zoomLevel.toFixed(2)}, Scale: ${scale.toFixed(2)}, Final Top: ${topPosition}px`);
 }
 
 // Handle Ctrl+Wheel zoom events
@@ -506,7 +491,6 @@ function handleWheelZoom(event) {
 
 function toggleFloatingState(enabled) {
     floatingStateToggleEnabled = enabled;
-    console.log(`Toggle called with: ${enabled}`);
     updateFloatingStateVisibility();
 }
 
@@ -517,7 +501,6 @@ function forceHideFloatingState() {
         floatingState.classList.remove('enabled');
         floatingState.style.display = ''; // Remove inline display style
         floatingState.textContent = '';
-        console.log('Force hidden floating state');
     }
 }
 
