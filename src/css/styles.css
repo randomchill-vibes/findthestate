@@ -200,11 +200,37 @@ input:checked + .slider:before {
     font-weight: bold !important;
 }
 
-/* Responsive adjustments */
+/* Tablet adjustments */
+@media (max-width: 1024px) and (min-width: 769px) {
+    .current-state-container {
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
+    }
+    
+    .current-state {
+        font-size: 2em;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 10px 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        border: 1px solid #e0e7ff;
+    }
+    
+    .map-container {
+        position: relative;
+        padding-top: 70px;
+    }
+}
+
+/* Mobile adjustments */
 @media (max-width: 768px) {
     .game-header {
         height: auto;
-        padding-top: 80px;
+        padding-top: 0;
+        margin-bottom: 10px;
     }
     
     .game-stats {
@@ -216,13 +242,26 @@ input:checked + .slider:before {
     }
     
     .current-state-container {
-        position: static;
-        transform: none;
-        margin-top: 10px;
+        position: absolute;
+        top: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        z-index: 20;
     }
     
     .current-state {
-        font-size: 1.8em;
+        font-size: 1.6em;
+        background: rgba(255, 255, 255, 0.95);
+        padding: 8px 16px;
+        border-radius: 10px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+        border: 1px solid #e0e7ff;
+    }
+    
+    .map-container {
+        position: relative;
+        margin-top: 0;
+        padding-top: 60px;
     }
     
     #usa-map {
