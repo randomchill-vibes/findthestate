@@ -228,6 +228,9 @@ input:checked + .slider:before {
 /* Floating viewport-aware state name */
 .floating-state {
     position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%) translateZ(0);
     z-index: 9999;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -240,10 +243,9 @@ input:checked + .slider:before {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
     display: none;
     pointer-events: none;
-    transition: all 0.3s ease;
-    transform: translateZ(0);
-    will-change: transform, top, left;
     white-space: nowrap;
+    /* Compensate for zoom scaling */
+    transform-origin: center top;
 }
 
 .floating-state.enabled {

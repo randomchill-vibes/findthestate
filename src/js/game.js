@@ -323,36 +323,34 @@ playAgainBtn.addEventListener('click', () => {
     resetGame();
 });
 
-// Floating state positioning system
+// Floating state with zoom compensation
 let floatingStateEnabled = false;
-let updatePositionInterval = null;
+let zoomCompensationInterval = null;
 
-function updateFloatingStatePosition() {
+function getZoomLevel() {
+    // Detect browser zoom level
+    const ratio = window.devicePixelRatio || 1;
+    const screen = window.screen;
+    const viewport = window.visualViewport;
+    
+    if (viewport) {
+        // Use Visual Viewport API if available (most accurate)
+        return window.innerWidth / viewport.width;
+    } else {
+        // Fallback method
+        return window.outerWidth / window.innerWidth;
+    }
+}
+
+function updateZoomCompensation() {
     const floatingState = document.getElementById('floating-state');
     if (!floatingState || !floatingStateEnabled) return;
     
-    // Get current viewport dimensions
-    const viewportWidth = window.innerWidth;
-    const viewportHeight = window.innerHeight;
+    const zoomLevel = getZoomLevel();
+    const inverseScale = 1 / Math.max(zoomLevel, 0.5); // Prevent division by very small numbers
     
-    // Get current scroll position
-    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-    const scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
-    
-    // Position at top center of visible viewport
-    const centerX = scrollLeft + (viewportWidth / 2);
-    const topY = scrollTop + 20; // 20px from top of viewport
-    
-    // Get the floating state dimensions
-    const rect = floatingState.getBoundingClientRect();
-    const elementWidth = rect.width || 200; // fallback width
-    
-    // Center horizontally, accounting for element width
-    const finalX = centerX - (elementWidth / 2);
-    
-    // Apply position
-    floatingState.style.left = `${finalX}px`;
-    floatingState.style.top = `${topY}px`;
+    // Apply inverse scaling to maintain constant visual size
+    floatingState.style.transform = `translateX(-50%) translateZ(0) scale(${inverseScale})`;
 }
 
 function toggleFloatingState(enabled) {
@@ -361,24 +359,25 @@ function toggleFloatingState(enabled) {
     
     if (enabled) {
         floatingState.classList.add('enabled');
-        // Start position updates
-        updateFloatingStatePosition();
-        updatePositionInterval = setInterval(updateFloatingStatePosition, 100);
+        // Start zoom compensation
+        updateZoomCompensation();
+        zoomCompensationInterval = setInterval(updateZoomCompensation, 200);
         
-        // Listen to scroll and resize events
-        window.addEventListener('scroll', updateFloatingStatePosition);
-        window.addEventListener('resize', updateFloatingStatePosition);
+        // Listen to resize events for zoom changes
+        window.addEventListener('resize', updateZoomCompensation);
     } else {
         floatingState.classList.remove('enabled');
-        // Stop position updates
-        if (updatePositionInterval) {
-            clearInterval(updatePositionInterval);
-            updatePositionInterval = null;
+        // Stop zoom compensation
+        if (zoomCompensationInterval) {
+            clearInterval(zoomCompensationInterval);
+            zoomCompensationInterval = null;
         }
         
-        // Remove event listeners
-        window.removeEventListener('scroll', updateFloatingStatePosition);
-        window.removeEventListener('resize', updateFloatingStatePosition);
+        // Remove event listener
+        window.removeEventListener('resize', updateZoomCompensation);
+        
+        // Reset transform
+        floatingState.style.transform = 'translateX(-50%) translateZ(0)';
     }
 }
 
