@@ -337,14 +337,44 @@ let floatingStateToggleEnabled = false; // User's toggle preference
 let zoomCompensationInterval = null;
 
 function getZoomLevel() {
-    // Most reliable method: use visualViewport.scale if available
-    if (window.visualViewport && typeof window.visualViewport.scale === 'number') {
-        return window.visualViewport.scale;
+    // Multiple methods to detect zoom level, with fallbacks
+    
+    // Method 1: Visual Viewport API (most reliable for modern browsers)
+    if (window.visualViewport) {
+        const zoom = window.visualViewport.scale;
+        if (zoom && zoom > 0) {
+            return zoom;
+        }
     }
     
-    // Fallback: compare actual vs expected pixel ratio
-    const devicePixelRatio = window.devicePixelRatio || 1;
-    return devicePixelRatio;
+    // Method 2: Compare outerWidth to innerWidth ratio with devicePixelRatio
+    // This works well on desktop browsers
+    if (window.outerWidth > 0 && window.innerWidth > 0) {
+        const ratioZoom = (window.outerWidth - 8) / window.innerWidth;
+        // Adjust for device pixel ratio
+        const adjustedZoom = ratioZoom * window.devicePixelRatio;
+        
+        // Only use if reasonable value (between 0.25 and 5)
+        if (adjustedZoom > 0.25 && adjustedZoom < 5) {
+            return adjustedZoom;
+        }
+    }
+    
+    // Method 3: Document width vs window width
+    const docWidth = document.documentElement.clientWidth;
+    const winWidth = window.innerWidth;
+    if (docWidth && winWidth && docWidth !== winWidth) {
+        return winWidth / docWidth;
+    }
+    
+    // Method 4: Device pixel ratio (basic fallback)
+    // This isn't perfect but gives us something to work with
+    if (window.devicePixelRatio) {
+        return window.devicePixelRatio;
+    }
+    
+    // Default fallback
+    return 1;
 }
 
 // Check if floating state should be visible (both toggle AND game active)
@@ -354,13 +384,30 @@ function updateFloatingStateVisibility() {
     
     const shouldBeVisible = floatingStateToggleEnabled && gameState.isGameActive;
     
+    // Debug logging
+    console.log(`Floating State Debug:`, {
+        toggleEnabled: floatingStateToggleEnabled,
+        gameActive: gameState.isGameActive,
+        shouldBeVisible: shouldBeVisible,
+        currentClassList: floatingState.className
+    });
+    
     if (shouldBeVisible) {
         floatingState.classList.add('enabled');
         // Start zoom compensation if not already running
         if (!zoomCompensationInterval) {
             updateZoomCompensation();
             zoomCompensationInterval = setInterval(updateZoomCompensation, 200);
+            
+            // Listen for various zoom-related events
             window.addEventListener('resize', updateZoomCompensation);
+            window.addEventListener('wheel', handleWheelZoom);
+            
+            // Visual Viewport API events (more reliable for zoom detection)
+            if (window.visualViewport) {
+                window.visualViewport.addEventListener('resize', updateZoomCompensation);
+                window.visualViewport.addEventListener('scroll', updateZoomCompensation);
+            }
         }
     } else {
         floatingState.classList.remove('enabled');
@@ -369,10 +416,22 @@ function updateFloatingStateVisibility() {
         if (zoomCompensationInterval) {
             clearInterval(zoomCompensationInterval);
             zoomCompensationInterval = null;
+            
+            // Remove all event listeners
             window.removeEventListener('resize', updateZoomCompensation);
+            window.removeEventListener('wheel', handleWheelZoom);
+            
+            if (window.visualViewport) {
+                window.visualViewport.removeEventListener('resize', updateZoomCompensation);
+                window.visualViewport.removeEventListener('scroll', updateZoomCompensation);
+            }
+            
             floatingState.style.transform = '';
         }
     }
+    
+    // Confirm final state
+    console.log(`After update - classList:`, floatingState.className);
 }
 
 function updateZoomCompensation() {
@@ -380,23 +439,58 @@ function updateZoomCompensation() {
     if (!floatingState || !floatingState.classList.contains('enabled')) return;
     
     const zoomLevel = getZoomLevel();
-    const inverseScale = 1 / Math.max(zoomLevel, 0.25); // Prevent division by very small numbers
     
-    // Combine centering transform with zoom compensation
-    floatingState.style.transform = `translateX(-50%) scale(${inverseScale})`;
+    // Apply inverse scaling to compensate for zoom
+    // When zoomed in (zoom > 1), scale down the element
+    // When zoomed out (zoom < 1), scale up the element
+    const scale = 1 / zoomLevel;
     
-    // Debug: log the values (remove later)
-    console.log(`Zoom: ${zoomLevel.toFixed(2)}, Scale: ${inverseScale.toFixed(2)}`);
+    // Apply both centering and zoom compensation
+    floatingState.style.transform = `translateX(-50%) scale(${scale})`;
+    
+    // Also adjust the position to stay at the top of the viewport
+    // The fixed positioning should handle this, but we ensure it stays visible
+    floatingState.style.top = '20px';
+    
+    // Debug logging (can be removed in production)
+    console.log(`Zoom level: ${zoomLevel.toFixed(2)}, Scale: ${scale.toFixed(2)}`);
+}
+
+// Handle Ctrl+Wheel zoom events
+function handleWheelZoom(event) {
+    // Only update if Ctrl key is pressed (zoom gesture)
+    if (event.ctrlKey || event.metaKey) {
+        // Small delay to let the zoom take effect
+        setTimeout(updateZoomCompensation, 10);
+    }
 }
 
 function toggleFloatingState(enabled) {
     floatingStateToggleEnabled = enabled;
+    console.log(`Toggle called with: ${enabled}`);
     updateFloatingStateVisibility();
+}
+
+// Force hide floating state (for debugging)
+function forceHideFloatingState() {
+    const floatingState = document.getElementById('floating-state');
+    if (floatingState) {
+        floatingState.classList.remove('enabled');
+        floatingState.style.display = ''; // Remove inline display style
+        floatingState.textContent = '';
+        console.log('Force hidden floating state');
+    }
 }
 
 // Initialize on load
 document.addEventListener('DOMContentLoaded', () => {
     initGame();
+    
+    // Force hide floating state on load
+    forceHideFloatingState();
+    
+    // Initialize floating state visibility
+    updateFloatingStateVisibility();
     
     // Floating state toggle
     const floatingStateToggle = document.getElementById('floating-state-toggle');

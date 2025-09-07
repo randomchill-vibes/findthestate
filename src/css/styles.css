@@ -230,7 +230,7 @@ input:checked + .slider:before {
     position: fixed !important;
     top: 20px !important;
     left: 50% !important;
-    transform: translateX(-50%) !important;
+    transform: translateX(-50%);
     z-index: 9999 !important;
     background: rgba(255, 255, 255, 0.95);
     backdrop-filter: blur(10px);
@@ -244,7 +244,8 @@ input:checked + .slider:before {
     display: none;
     pointer-events: none;
     white-space: nowrap;
-    transform-origin: center top;
+    transform-origin: top center;
+    transition: none;
 }
 
 .floating-state.enabled {
