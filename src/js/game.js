@@ -328,18 +328,14 @@ let floatingStateEnabled = false;
 let zoomCompensationInterval = null;
 
 function getZoomLevel() {
-    // Detect browser zoom level
-    const ratio = window.devicePixelRatio || 1;
-    const screen = window.screen;
-    const viewport = window.visualViewport;
-    
-    if (viewport) {
-        // Use Visual Viewport API if available (most accurate)
-        return window.innerWidth / viewport.width;
-    } else {
-        // Fallback method
-        return window.outerWidth / window.innerWidth;
+    // Most reliable method: use visualViewport.scale if available
+    if (window.visualViewport && typeof window.visualViewport.scale === 'number') {
+        return window.visualViewport.scale;
     }
+    
+    // Fallback: compare actual vs expected pixel ratio
+    const devicePixelRatio = window.devicePixelRatio || 1;
+    return devicePixelRatio;
 }
 
 function updateZoomCompensation() {
@@ -347,15 +343,14 @@ function updateZoomCompensation() {
     if (!floatingState || !floatingStateEnabled) return;
     
     const zoomLevel = getZoomLevel();
-    const inverseScale = 1 / Math.max(zoomLevel, 0.5); // Prevent division by very small numbers
+    const inverseScale = 1 / Math.max(zoomLevel, 0.25); // Prevent division by very small numbers
     
-    // Apply only scaling, preserve fixed positioning
-    floatingState.style.transform = `scale(${inverseScale})`;
+    // Combine centering transform with zoom compensation
+    // Keep CSS centering, add scaling
+    floatingState.style.transform = `translateX(-50%) scale(${inverseScale})`;
     
-    // Adjust centering based on actual width after scaling
-    const rect = floatingState.getBoundingClientRect();
-    const actualWidth = rect.width;
-    floatingState.style.marginLeft = `${-actualWidth / 2}px`;
+    // Debug: log the values (remove later)
+    console.log(`Zoom: ${zoomLevel.toFixed(2)}, Scale: ${inverseScale.toFixed(2)}`);
 }
 
 function toggleFloatingState(enabled) {
@@ -381,9 +376,8 @@ function toggleFloatingState(enabled) {
         // Remove event listener
         window.removeEventListener('resize', updateZoomCompensation);
         
-        // Reset transform and margin
+        // Reset to CSS default transform
         floatingState.style.transform = '';
-        floatingState.style.marginLeft = '-100px';
     }
 }
 
