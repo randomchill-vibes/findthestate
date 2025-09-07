@@ -98,9 +98,9 @@ function updateUI() {
     
     if (gameState.currentState) {
         currentStateElement.textContent = statesData[gameState.currentState];
-        // Update floating state display
+        // Update floating state display only during gameplay
         const floatingState = document.getElementById('floating-state');
-        if (floatingState) {
+        if (floatingState && gameState.isGameActive) {
             floatingState.textContent = statesData[gameState.currentState];
         }
     } else {
@@ -267,6 +267,12 @@ function handleStateClick(stateCode) {
 function endGame() {
     gameState.isGameActive = false;
     
+    // Hide floating state when game ends
+    const floatingState = document.getElementById('floating-state');
+    if (floatingState) {
+        floatingState.textContent = '';
+    }
+    
     // Stop timer if enabled
     if (gameState.timerEnabled) {
         gameState.endTime = Date.now();
@@ -293,6 +299,12 @@ function goHome() {
     // Stop any running timer
     if (gameState.timerInterval) {
         clearInterval(gameState.timerInterval);
+    }
+    
+    // Hide floating state when going home
+    const floatingState = document.getElementById('floating-state');
+    if (floatingState) {
+        floatingState.textContent = '';
     }
     
     // Reset to initial state
