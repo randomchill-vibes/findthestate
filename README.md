@@ -87,4 +87,4 @@ find-the-state/
 
 ## License
 
-MIT License - Feel free to use and modify for educational purposes.
+Apache License 2.0 - Feel free to use and modify for educational and commercial purposes.

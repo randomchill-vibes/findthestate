@@ -10,9 +10,9 @@
   },
   "keywords": ["geography", "game", "usa", "states", "education"],
   "author": "Claude Code",
-  "license": "MIT",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
-    "url": "https://github.com/username/find-the-state.git"
+    "url": "https://github.com/randomchill-vibes/findthestate.git"
   }
 }
