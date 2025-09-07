@@ -397,14 +397,18 @@ function updateFloatingStateVisibility() {
         // Start zoom compensation if not already running
         if (!zoomCompensationInterval) {
             updateZoomCompensation();
-            zoomCompensationInterval = setInterval(updateZoomCompensation, 200);
+            // More frequent updates to ensure floating box stays positioned correctly
+            zoomCompensationInterval = setInterval(updateZoomCompensation, 100);
             
-            // Listen for various zoom-related events
+            // Listen for various events - use passive listeners for better performance
             window.addEventListener('resize', updateZoomCompensation);
             window.addEventListener('wheel', handleWheelZoom);
-            window.addEventListener('scroll', updateZoomCompensation);
             
-            // Visual Viewport API events (more reliable for zoom detection)
+            // Aggressive scroll tracking to ensure element stays at top
+            window.addEventListener('scroll', updateZoomCompensation, { passive: true });
+            document.addEventListener('scroll', updateZoomCompensation, { passive: true });
+            
+            // Visual Viewport API events (most reliable for zoom/scroll detection)
             if (window.visualViewport) {
                 window.visualViewport.addEventListener('resize', updateZoomCompensation);
                 window.visualViewport.addEventListener('scroll', updateZoomCompensation);
@@ -422,6 +426,7 @@ function updateFloatingStateVisibility() {
             window.removeEventListener('resize', updateZoomCompensation);
             window.removeEventListener('wheel', handleWheelZoom);
             window.removeEventListener('scroll', updateZoomCompensation);
+            document.removeEventListener('scroll', updateZoomCompensation);
             
             if (window.visualViewport) {
                 window.visualViewport.removeEventListener('resize', updateZoomCompensation);
@@ -455,26 +460,28 @@ function updateZoomCompensation() {
     
     // Use Visual Viewport API for accurate positioning when zoomed
     if (window.visualViewport) {
-        // When zoomed in, the visual viewport can be offset within the layout viewport
-        // We need to position relative to the visual viewport, not the layout viewport
+        // CRITICAL: Always position the TOP EDGE of the floating box at the top of the visual viewport
+        // This ensures the ENTIRE box is visible, not just part of it
         const offsetTop = window.visualViewport.offsetTop || 0;
         const offsetLeft = window.visualViewport.offsetLeft || 0;
         
-        // Position the element at the top of the visual viewport
-        topPosition = offsetTop + 20;
+        // Position the TOP EDGE of the element at the visual viewport top
+        // Use a smaller margin to ensure it's clearly visible at the top
+        topPosition = offsetTop + 10;
         
-        // For horizontal centering, we need to account for the visual viewport's position
-        // Calculate the center of the visual viewport in layout viewport coordinates
+        // For horizontal centering, calculate center of visual viewport in layout coordinates
         const visualViewportCenter = offsetLeft + (window.visualViewport.width / 2);
         const layoutViewportWidth = document.documentElement.clientWidth;
         leftPosition = (visualViewportCenter / layoutViewportWidth) * 100;
         
+        // Apply positioning - this ensures the element's top edge is always at visual viewport top
         floatingState.style.left = `${leftPosition}%`;
         floatingState.style.top = `${topPosition}px`;
         floatingState.style.transform = `translateX(-50%) scale(${scale})`;
         
         // Debug logging
-        console.log(`Visual Viewport - Top: ${offsetTop}, Left: ${offsetLeft}, Center: ${leftPosition.toFixed(1)}%`);
+        console.log(`Visual Viewport - Top: ${offsetTop}, Left: ${offsetLeft}, ElementTop: ${topPosition}px, Center: ${leftPosition.toFixed(1)}%`);
+        console.log(`Viewport dimensions: ${window.visualViewport.width}x${window.visualViewport.height}`);
     } else {
         // Fallback for browsers without Visual Viewport API
         floatingState.style.left = `${leftPosition}%`;
@@ -483,7 +490,7 @@ function updateZoomCompensation() {
     }
     
     // Debug logging (can be removed in production)
-    console.log(`Zoom level: ${zoomLevel.toFixed(2)}, Scale: ${scale.toFixed(2)}, Top: ${topPosition}px`);
+    console.log(`Zoom: ${zoomLevel.toFixed(2)}, Scale: ${scale.toFixed(2)}, Final Top: ${topPosition}px`);
 }
 
 // Handle Ctrl+Wheel zoom events
